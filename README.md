@@ -8,7 +8,8 @@
 - [RISC-V Assembly Language](https://web.eecs.utk.edu/~smarz1/courses/ece356/notes/assembly/)
 
 ## Inline assembly
-[GCC Inline Assembly How To](https://www.ibiblio.org/gferg/ldp/GCC-Inline-Assembly-HOWTO.html)
+
+- [GCC Inline Assembly How To](https://www.ibiblio.org/gferg/ldp/GCC-Inline-Assembly-HOWTO.html)
 
 ## RISC-V Book
 - [An Introduction to Assembly Programming with RISC-V](https://riscv-programming.org/book/riscv-book.html)
