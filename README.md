@@ -20,6 +20,7 @@ You should install Sifive Freedom Studio and the J-Link software:
 
 - [SiFive Freedom Studio](https://unilj-my.sharepoint.com/:f:/g/personal/bulic_fri1_uni-lj_si/Epy-EtAoxldOrquUyyTyBAgB6Ai1G9XNwhcbziRiY5xjEw?e=Xuenld)
 - [J-Link](https://www.segger.com/downloads/jlink/)
+- [Installation instructions](https://static.dev.sifive.com/dev-tools/FreedomStudio/2019.08/freedom-studio-manual-4.7.2-2019-08-1.pdf)
 
 
 
