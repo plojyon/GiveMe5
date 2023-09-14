@@ -1,4 +1,4 @@
-# GiveMe5
+# Give Me Five!
 
 ## RISC-V Assembler References:
 
