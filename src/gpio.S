@@ -69,7 +69,7 @@ gpio_output_en:
     lw t1, GPIO_OUTPUT_EN(t0)       # Read present value
     li t2, 0x01
     sll t2, t2, a0                  # shift 1 to pin position 
-    or t1, t1, t2  
+    or t1, t1, t2                   # set the bit
     sw t1, GPIO_OUTPUT_EN(t0)       # Store back 
 
     # epilogue (restore three saved registers and the return address):

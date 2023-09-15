@@ -11,6 +11,8 @@
 .include "memory_map.inc"
 .include "gpio.inc"
 
+.extern mtime__handler
+
 
 .option norvc       # disables the generation of compressed instructions.
 
@@ -45,7 +47,8 @@ _vector_table:
     j _default_handler
     j _default_handler
     # ------------------------------------------------------------------------------
-    j _mtim_interrupt_handler           # 7: machine timer interrupt handler
+    #j _mtim_interrupt_handler           # 7: machine timer interrupt handler
+    j mtime__handler
     # ------------------------------------------------------------------------------
     j _default_handler
     j _default_handler

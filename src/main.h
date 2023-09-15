@@ -1,3 +1,10 @@
+/*
+ * mtime.c
+ *
+ *  Created on: 14 Sep 2023
+ *      Author: Pa3cio, UL FRI
+ */
+
 
 #ifndef MAIN_H
 #define MAIN_H
@@ -20,7 +27,7 @@ void gpio_toggle_pin(int pin);
 void gpio_clear_pin(int pin);
 
 /* Timer */
-set_timer_compare(unsigned delay);
+void set_timer_compare(unsigned delay);
 
 
 /* Interrupts : */
