@@ -28,5 +28,6 @@ void gpio_output_enable_s(unsigned int pin_number);
 void gpio_output_enable_c(unsigned int pin_number);
 void gpio_output_set_s(unsigned int pin_number, unsigned int value);
 void gpio_output_set_c(unsigned int pin_number, unsigned int value);
+void gpio_output_toggle_c(unsigned int pin_number);
 
 #endif /* GPIO_H_ */

@@ -88,29 +88,28 @@ __metal_dt_pmp      0x20              /home/yon/wsFreedomStudio/GiveMe5/bsp/inst
 
 Discarded input sections
 
- .text          0x0000000000000000        0x0 /tmp/ccVtku3D.o
- .data          0x0000000000000000        0x0 /tmp/ccVtku3D.o
- .bss           0x0000000000000000        0x0 /tmp/ccVtku3D.o
- .text          0x0000000000000000        0x0 /tmp/ccQeEdqP.o
- .data          0x0000000000000000        0x0 /tmp/ccQeEdqP.o
- .bss           0x0000000000000000        0x0 /tmp/ccQeEdqP.o
- .text.gpio_output_enable_c
-                0x0000000000000000       0x70 /tmp/ccQeEdqP.o
- .text.gpio_output_set_c
-                0x0000000000000000       0x5c /tmp/ccQeEdqP.o
- .debug_info    0x0000000000000000      0x136 /tmp/ccQeEdqP.o
- .debug_abbrev  0x0000000000000000       0xa7 /tmp/ccQeEdqP.o
+ .text          0x0000000000000000        0x0 /tmp/ccbYKofb.o
+ .data          0x0000000000000000        0x0 /tmp/ccbYKofb.o
+ .bss           0x0000000000000000        0x0 /tmp/ccbYKofb.o
+ .text          0x0000000000000000        0x0 /tmp/ccoe70R9.o
+ .data          0x0000000000000000        0x0 /tmp/ccoe70R9.o
+ .bss           0x0000000000000000        0x0 /tmp/ccoe70R9.o
+ .text          0x0000000000000000        0x0 /tmp/ccsuoFdg.o
+ .data          0x0000000000000000        0x0 /tmp/ccsuoFdg.o
+ .bss           0x0000000000000000        0x0 /tmp/ccsuoFdg.o
+ .text          0x0000000000000000       0xa0 /tmp/ccdY6xun.o
+ .data          0x0000000000000000        0x0 /tmp/ccdY6xun.o
+ .bss           0x0000000000000000        0x0 /tmp/ccdY6xun.o
+ .debug_line    0x0000000000000000      0x121 /tmp/ccdY6xun.o
+ .debug_info    0x0000000000000000       0x26 /tmp/ccdY6xun.o
+ .debug_abbrev  0x0000000000000000       0x14 /tmp/ccdY6xun.o
  .debug_aranges
-                0x0000000000000000       0x28 /tmp/ccQeEdqP.o
- .debug_ranges  0x0000000000000000       0x18 /tmp/ccQeEdqP.o
- .debug_line    0x0000000000000000      0x105 /tmp/ccQeEdqP.o
- .debug_str     0x0000000000000000      0x136 /tmp/ccQeEdqP.o
- .comment       0x0000000000000000       0x29 /tmp/ccQeEdqP.o
- .debug_frame   0x0000000000000000       0x58 /tmp/ccQeEdqP.o
+                0x0000000000000000       0x20 /tmp/ccdY6xun.o
+ .debug_str     0x0000000000000000       0x39 /tmp/ccdY6xun.o
  .riscv.attributes
-                0x0000000000000000       0x2b /tmp/ccQeEdqP.o
- .data          0x0000000000000000        0x0 /tmp/ccC6KnYt.o
- .bss           0x0000000000000000        0x0 /tmp/ccC6KnYt.o
+                0x0000000000000000       0x29 /tmp/ccdY6xun.o
+ .data          0x0000000000000000        0x0 /tmp/cc37oFNl.o
+ .bss           0x0000000000000000        0x0 /tmp/cc37oFNl.o
  .text          0x0000000000000000        0x0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
  .data          0x0000000000000000        0x0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
  .bss           0x0000000000000000        0x0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
@@ -1448,9 +1447,11 @@ ram              0x0000000080000000 0x0000000000004000 axw !rl
 
 Linker script and memory map
 
-LOAD /tmp/ccVtku3D.o
-LOAD /tmp/ccQeEdqP.o
-LOAD /tmp/ccC6KnYt.o
+LOAD /tmp/ccbYKofb.o
+LOAD /tmp/ccoe70R9.o
+LOAD /tmp/ccsuoFdg.o
+LOAD /tmp/ccdY6xun.o
+LOAD /tmp/cc37oFNl.o
 START GROUP
 LOAD /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a
 LOAD /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32imac/ilp32/libgcc.a
@@ -1464,7 +1465,7 @@ END GROUP
                 0x0000000000000000                PROVIDE (__metal_boot_hart = 0x0)
                 0x0000000000000000                PROVIDE (__metal_chicken_bit = 0x0)
 
-.init           0x0000000020010000      0x18a
+.init           0x0000000020010000      0x18e
  *(.text.metal.init.enter)
  .text.metal.init.enter
                 0x0000000020010000       0x60 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
@@ -1481,193 +1482,213 @@ END GROUP
                 0x0000000020010070                __metal_synchronize_harts
  *(.text.libgloss.start)
  .text.libgloss.start
-                0x000000002001007e      0x10c /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
+                0x000000002001007e      0x110 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
                 0x000000002001007e                _start
-                0x000000002001016a                _init
-                0x000000002001016a                _fini
-                0x000000002001016c                secondary_main
+                0x000000002001016e                _init
+                0x000000002001016e                _fini
+                0x0000000020010170                secondary_main
 
 .fini
  *(SORT_NONE(.fini))
 
-.text           0x000000002001018c      0xd68
+.text           0x00000000200101c0     0x102c
  *(.text.unlikely .text.unlikely.*)
  *(.text.startup .text.startup.*)
  *(.text .text.*)
- .text.main     0x000000002001018c       0x62 /tmp/ccVtku3D.o
-                0x000000002001018c                main
- *fill*         0x00000000200101ee        0x2 
- .text          0x00000000200101f0       0x6c /tmp/ccC6KnYt.o
-                0x00000000200101f0                gpio_output_enable_s
-                0x0000000020010220                gpio_output_set_s
- .text.atexit   0x000000002001025c        0xa /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-atexit.o)
-                0x000000002001025c                atexit
- .text.exit     0x0000000020010266       0x2c /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-exit.o)
-                0x0000000020010266                exit
+ .text.main     0x00000000200101c0       0x40 /tmp/ccbYKofb.o
+                0x00000000200101c0                main
+ .text.gpio_output_enable_c
+                0x0000000020010200       0x70 /tmp/ccoe70R9.o
+                0x0000000020010200                gpio_output_enable_c
+ .text.gpio_output_set_c
+                0x0000000020010270       0x5c /tmp/ccoe70R9.o
+                0x0000000020010270                gpio_output_set_c
+ .text.gpio_output_toggle_c
+                0x00000000200102cc       0x54 /tmp/ccoe70R9.o
+                0x00000000200102cc                gpio_output_toggle_c
+ .text.mtime_int_handler
+                0x0000000020010320       0x80 /tmp/ccsuoFdg.o
+                0x0000000020010320                mtime_int_handler
+ *fill*         0x00000000200103a0       0x20 
+ .text          0x00000000200103c0      0x184 /tmp/cc37oFNl.o
+                0x00000000200103c0                vector_table
+                0x00000000200103f4                swi_handler
+                0x0000000020010438                exti_handler
+                0x000000002001043c                default_handler
+                0x0000000020010440                _panic_handler
+                0x0000000020010444                enable_global_interrupts
+                0x000000002001047c                enable_timer_interrupts
+                0x00000000200104b4                set_time_cmp
+                0x00000000200104f0                register_handler
+ .text.atexit   0x0000000020010544        0xa /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-atexit.o)
+                0x0000000020010544                atexit
+ .text.exit     0x000000002001054e       0x2c /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-exit.o)
+                0x000000002001054e                exit
  .text.__libc_fini_array
-                0x0000000020010292       0x38 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-fini.o)
-                0x0000000020010292                __libc_fini_array
+                0x000000002001057a       0x38 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-fini.o)
+                0x000000002001057a                __libc_fini_array
  .text.__libc_init_array
-                0x00000000200102ca       0x6a /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-init.o)
-                0x00000000200102ca                __libc_init_array
+                0x00000000200105b2       0x6a /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-init.o)
+                0x00000000200105b2                __libc_init_array
  .text.__register_exitproc
-                0x0000000020010334       0x7c /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-__atexit.o)
-                0x0000000020010334                __register_exitproc
+                0x000000002001061c       0x88 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-__atexit.o)
+                0x000000002001061c                __register_exitproc
  .text.__call_exitprocs
-                0x00000000200103b0       0xc4 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-__call_atexit.o)
-                0x00000000200103b0                __call_exitprocs
+                0x00000000200106a4       0xc8 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-__call_atexit.o)
+                0x00000000200106a4                __call_exitprocs
  .text.__metal_driver_sifive_fe310_g000_hfrosc_ref
-                0x0000000020010474       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+                0x000000002001076c       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
  .text.__metal_driver_sifive_fe310_g000_hfrosc_config_base
-                0x000000002001048e       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+                0x0000000020010786       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
  .text.__metal_driver_sifive_fe310_g000_hfrosc_config_offset
-                0x00000000200104a8       0x14 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+                0x00000000200107a0       0x14 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
  .text.__metal_driver_sifive_fe310_g000_prci_vtable
-                0x00000000200104bc       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+                0x00000000200107b4       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
  .text.__metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz
-                0x00000000200104ce       0x84 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
-                0x00000000200104ce                __metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz
+                0x00000000200107c6       0x84 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+                0x00000000200107c6                __metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz
  .text.__metal_driver_sifive_fe310_g000_hfrosc_set_rate_hz
-                0x0000000020010552       0x22 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
-                0x0000000020010552                __metal_driver_sifive_fe310_g000_hfrosc_set_rate_hz
+                0x000000002001084a       0x22 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+                0x000000002001084a                __metal_driver_sifive_fe310_g000_hfrosc_set_rate_hz
  .text.__metal_driver_sifive_fe310_g000_hfxosc_ref
-                0x0000000020010574       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+                0x000000002001086c       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
  .text.__metal_driver_sifive_fe310_g000_hfxosc_config_base
-                0x000000002001058e       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+                0x0000000020010886       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
  .text.__metal_driver_sifive_fe310_g000_hfxosc_config_offset
-                0x00000000200105a8       0x14 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+                0x00000000200108a0       0x14 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
  .text.__metal_driver_sifive_fe310_g000_prci_vtable
-                0x00000000200105bc       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+                0x00000000200108b4       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
  .text.__metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz
-                0x00000000200105ce       0x74 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
-                0x00000000200105ce                __metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz
+                0x00000000200108c6       0x74 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+                0x00000000200108c6                __metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz
  .text.__metal_driver_sifive_fe310_g000_hfxosc_set_rate_hz
-                0x0000000020010642       0x22 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
-                0x0000000020010642                __metal_driver_sifive_fe310_g000_hfxosc_set_rate_hz
+                0x000000002001093a       0x22 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+                0x000000002001093a                __metal_driver_sifive_fe310_g000_hfxosc_set_rate_hz
  .text.__metal_driver_sifive_fe310_g000_pll_pllsel0
-                0x0000000020010664       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x000000002001095c       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_pll_pllref
-                0x000000002001067e       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010976       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_pll_divider_base
-                0x0000000020010698       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010990       0x1a /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_pll_divider_offset
-                0x00000000200106b2       0x14 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x00000000200109aa       0x14 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_pll_config_base
-                0x00000000200106c6       0x16 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x00000000200109be       0x16 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_pll_config_offset
-                0x00000000200106dc       0x10 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x00000000200109d4       0x10 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_pll_init_rate
-                0x00000000200106ec       0x16 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x00000000200109e4       0x16 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_prci_base
-                0x0000000020010702       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x00000000200109fa       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_prci_vtable
-                0x0000000020010714       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010a0c       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.get_pll_config_freq
-                0x0000000020010726       0x4e /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010a1e       0x4e /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.metal_sifive_fe310_g000_pll_init
-                0x0000000020010774       0x28 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010a6c       0x28 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_pll_init
-                0x000000002001079c       0xa0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
-                0x000000002001079c                __metal_driver_sifive_fe310_g000_pll_init
+                0x0000000020010a94       0xa0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010a94                __metal_driver_sifive_fe310_g000_pll_init
  .text.__metal_driver_sifive_fe310_g000_pll_get_rate_hz
-                0x000000002001083c      0x16c /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
-                0x000000002001083c                __metal_driver_sifive_fe310_g000_pll_get_rate_hz
+                0x0000000020010b34      0x16c /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010b34                __metal_driver_sifive_fe310_g000_pll_get_rate_hz
  .text.find_closest_config
-                0x00000000200109a8       0xaa /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010ca0       0xaa /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.configure_pll
-                0x0000000020010a52      0x132 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010d4a      0x132 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_pll_set_rate_hz
-                0x0000000020010b84      0x154 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
-                0x0000000020010b84                __metal_driver_sifive_fe310_g000_pll_set_rate_hz
+                0x0000000020010e7c      0x154 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010e7c                __metal_driver_sifive_fe310_g000_pll_set_rate_hz
  .text.use_hfxosc
-                0x0000000020010cd8       0x26 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020010fd0       0x26 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .text.__metal_driver_sifive_fe310_g000_prci_base
-                0x0000000020010cfe       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+                0x0000000020010ff6       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
  .text.__metal_driver_sifive_fe310_g000_prci_get_reg
-                0x0000000020010d10       0x2e /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
-                0x0000000020010d10                __metal_driver_sifive_fe310_g000_prci_get_reg
+                0x0000000020011008       0x2e /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+                0x0000000020011008                __metal_driver_sifive_fe310_g000_prci_get_reg
  .text.__metal_driver_sifive_fe310_g000_prci_set_reg
-                0x0000000020010d3e       0x38 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
-                0x0000000020010d3e                __metal_driver_sifive_fe310_g000_prci_set_reg
+                0x0000000020011036       0x38 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+                0x0000000020011036                __metal_driver_sifive_fe310_g000_prci_set_reg
  .text._metal_clock_call_all_callbacks
-                0x0000000020010d76       0x40 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
-                0x0000000020010d76                _metal_clock_call_all_callbacks
+                0x000000002001106e       0x40 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+                0x000000002001106e                _metal_clock_call_all_callbacks
  .text.metal_clock_get_rate_hz
-                0x0000000020010db6       0x26 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
-                0x0000000020010db6                metal_clock_get_rate_hz
+                0x00000000200110ae       0x26 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+                0x00000000200110ae                metal_clock_get_rate_hz
  .text.metal_clock_set_rate_hz
-                0x0000000020010ddc       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
-                0x0000000020010ddc                metal_clock_set_rate_hz
+                0x00000000200110d4       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+                0x00000000200110d4                metal_clock_set_rate_hz
  .text.metal_shutdown
-                0x0000000020010e24        0xe /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
-                0x0000000020010e24                metal_shutdown
+                0x000000002001111c        0xe /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+                0x000000002001111c                metal_shutdown
  .text.__metal_driver_fixed_clock_rate
-                0x0000000020010e32       0x70 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+                0x000000002001112a       0x70 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
  .text.__metal_driver_fixed_clock_get_rate_hz
-                0x0000000020010ea2       0x1e /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
-                0x0000000020010ea2                __metal_driver_fixed_clock_get_rate_hz
+                0x000000002001119a       0x1e /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+                0x000000002001119a                __metal_driver_fixed_clock_get_rate_hz
  .text.__metal_driver_fixed_clock_set_rate_hz
-                0x0000000020010ec0       0x22 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
-                0x0000000020010ec0                __metal_driver_fixed_clock_set_rate_hz
- .text._exit    0x0000000020010ee2       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
-                0x0000000020010ee2                _exit
+                0x00000000200111b8       0x22 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+                0x00000000200111b8                __metal_driver_fixed_clock_set_rate_hz
+ .text._exit    0x00000000200111da       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+                0x00000000200111da                _exit
  *(.gnu.linkonce.t.*)
                 [!provide]                        PROVIDE (__etext = .)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (etext = .)
 
-.rodata         0x0000000020010ef4      0x8a4
+.rodata         0x00000000200111ec      0x8a4
  *(.rdata)
  *(.rodata .rodata.*)
  .rodata.libgloss.start
-                0x0000000020010ef4       0x11 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
- *fill*         0x0000000020010f05        0x3 
+                0x00000000200111ec       0x11 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
+ *fill*         0x00000000200111fd        0x3 
  .rodata.pll_configs
-                0x0000000020010f08      0x880 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020011200      0x880 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .rodata.__metal_driver_vtable_sifive_fe310_g000_pll
-                0x0000000020011788        0xc /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
-                0x0000000020011788                __metal_driver_vtable_sifive_fe310_g000_pll
+                0x0000000020011a80        0xc /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020011a80                __metal_driver_vtable_sifive_fe310_g000_pll
  *(.gnu.linkonce.r.*)
-                0x0000000020011798                . = ALIGN (0x8)
- *fill*         0x0000000020011794        0x4 
+                0x0000000020011a90                . = ALIGN (0x8)
+ *fill*         0x0000000020011a8c        0x4 
  *(.srodata.cst16)
  *(.srodata.cst8)
  *(.srodata.cst4)
  *(.srodata.cst2)
  *(.srodata .srodata.*)
 
-.rela.dyn       0x0000000020011798        0x0
+.rela.dyn       0x0000000020011a90        0x0
+ .rela.text     0x0000000020011a90        0x0 /tmp/ccbYKofb.o
  .rela.text.metal.init.enter
-                0x0000000020011798        0x0 /tmp/ccVtku3D.o
+                0x0000000020011a90        0x0 /tmp/ccbYKofb.o
  .rela.text.libgloss.start
-                0x0000000020011798        0x0 /tmp/ccVtku3D.o
+                0x0000000020011a90        0x0 /tmp/ccbYKofb.o
  .rela.text.__libc_fini_array
-                0x0000000020011798        0x0 /tmp/ccVtku3D.o
+                0x0000000020011a90        0x0 /tmp/ccbYKofb.o
  .rela.data.impure_data
-                0x0000000020011798        0x0 /tmp/ccVtku3D.o
+                0x0000000020011a90        0x0 /tmp/ccbYKofb.o
  .rela.text.__libc_init_array
-                0x0000000020011798        0x0 /tmp/ccVtku3D.o
+                0x0000000020011a90        0x0 /tmp/ccbYKofb.o
  .rela.text.__register_exitproc
-                0x0000000020011798        0x0 /tmp/ccVtku3D.o
-                0x0000000020011798                . = ALIGN (0x8)
+                0x0000000020011a90        0x0 /tmp/ccbYKofb.o
+                0x0000000020011a90                . = ALIGN (0x8)
 
-.preinit_array  0x0000000020011798        0x0
-                0x0000000020011798                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000020011a90        0x0
+                0x0000000020011a90                PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
-                0x0000000020011798                PROVIDE (__preinit_array_end = .)
+                0x0000000020011a90                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000020011798        0x8
-                0x0000000020011798                PROVIDE (__init_array_start = .)
+.init_array     0x0000000020011a90        0x8
+                0x0000000020011a90                PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
- .init_array    0x0000000020011798        0x8 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
-                0x00000000200117a0                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000020011a90        0x8 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000020011a98                PROVIDE (__init_array_end = .)
 
-.fini_array     0x00000000200117a0        0x0
-                0x00000000200117a0                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000020011a98        0x0
+                0x0000000020011a98                PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
-                0x00000000200117a0                PROVIDE (__fini_array_end = .)
+                0x0000000020011a98                PROVIDE (__fini_array_end = .)
 
 .ctors
  *crtbegin.o(.ctors)
@@ -1683,13 +1704,13 @@ END GROUP
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
 
-.itim           0x0000000008000000        0x0 load address 0x00000000200117a0
+.itim           0x0000000008000000        0x0 load address 0x0000000020011a98
  *(.itim .itim.*)
-                0x00000000200117a0                PROVIDE (metal_segment_itim_source_start = LOADADDR (.itim))
+                0x0000000020011a98                PROVIDE (metal_segment_itim_source_start = LOADADDR (.itim))
                 0x0000000008000000                PROVIDE (metal_segment_itim_target_start = ADDR (.itim))
                 0x0000000008000000                PROVIDE (metal_segment_itim_target_end = (ADDR (.itim) + SIZEOF (.itim)))
 
-.data           0x0000000080000000       0xe0 load address 0x00000000200117a0
+.data           0x0000000080000000       0xe0 load address 0x0000000020011a98
  *(.data .data.*)
  .data.impure_data
                 0x0000000080000000       0x60 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-impure.o)
@@ -1748,7 +1769,7 @@ END GROUP
  *(.rdata)
  *(.rodata .rodata.*)
  *(.gnu.linkonce.r.*)
-                0x00000000200117a0                PROVIDE (metal_segment_data_source_start = LOADADDR (.data))
+                0x0000000020011a98                PROVIDE (metal_segment_data_source_start = LOADADDR (.data))
                 0x0000000080000000                PROVIDE (metal_segment_data_target_start = ADDR (.data))
                 0x00000000800000e0                PROVIDE (metal_segment_data_target_end = (ADDR (.data) + SIZEOF (.data)))
 
@@ -1781,130 +1802,148 @@ END GROUP
                 [!provide]                        PROVIDE (_heap_end = .)
 OUTPUT(giveMe5 elf32-littleriscv)
 
-.debug_info     0x0000000000000000     0xe4f7
- .debug_info    0x0000000000000000       0x4a /tmp/ccVtku3D.o
- .debug_info    0x000000000000004a       0x26 /tmp/ccC6KnYt.o
- .debug_info    0x0000000000000070       0x22 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
- .debug_info    0x0000000000000092       0x26 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
- .debug_info    0x00000000000000b8     0x19d5 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
- .debug_info    0x0000000000001a8d     0x19bb /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
- .debug_info    0x0000000000003448     0x1b1b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
- .debug_info    0x0000000000004f63     0x1b1b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
- .debug_info    0x0000000000006a7e     0x27f8 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
- .debug_info    0x0000000000009276     0x1a92 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
- .debug_info    0x000000000000ad08      0x2c7 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
- .debug_info    0x000000000000afcf     0x1a80 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
- .debug_info    0x000000000000ca4f     0x1a59 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
- .debug_info    0x000000000000e4a8       0x4f /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+.debug_info     0x0000000000000000     0xe6fb
+ .debug_info    0x0000000000000000       0x4a /tmp/ccbYKofb.o
+ .debug_info    0x000000000000004a      0x189 /tmp/ccoe70R9.o
+ .debug_info    0x00000000000001d3       0x7b /tmp/ccsuoFdg.o
+ .debug_info    0x000000000000024e       0x26 /tmp/cc37oFNl.o
+ .debug_info    0x0000000000000274       0x22 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
+ .debug_info    0x0000000000000296       0x26 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
+ .debug_info    0x00000000000002bc     0x19d5 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
+ .debug_info    0x0000000000001c91     0x19bb /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
+ .debug_info    0x000000000000364c     0x1b1b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+ .debug_info    0x0000000000005167     0x1b1b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+ .debug_info    0x0000000000006c82     0x27f8 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+ .debug_info    0x000000000000947a     0x1a92 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+ .debug_info    0x000000000000af0c      0x2c7 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+ .debug_info    0x000000000000b1d3     0x1a80 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+ .debug_info    0x000000000000cc53     0x1a59 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+ .debug_info    0x000000000000e6ac       0x4f /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
 
-.debug_abbrev   0x0000000000000000     0x129e
- .debug_abbrev  0x0000000000000000       0x46 /tmp/ccVtku3D.o
- .debug_abbrev  0x0000000000000046       0x14 /tmp/ccC6KnYt.o
- .debug_abbrev  0x000000000000005a       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
- .debug_abbrev  0x000000000000006c       0x14 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
- .debug_abbrev  0x0000000000000080      0x192 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
- .debug_abbrev  0x0000000000000212      0x176 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
- .debug_abbrev  0x0000000000000388      0x237 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
- .debug_abbrev  0x00000000000005bf      0x237 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
- .debug_abbrev  0x00000000000007f6      0x3a4 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
- .debug_abbrev  0x0000000000000b9a      0x1df /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
- .debug_abbrev  0x0000000000000d79      0x129 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
- .debug_abbrev  0x0000000000000ea2      0x1df /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
- .debug_abbrev  0x0000000000001081      0x1d0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
- .debug_abbrev  0x0000000000001251       0x4d /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+.debug_abbrev   0x0000000000000000     0x13bd
+ .debug_abbrev  0x0000000000000000       0x46 /tmp/ccbYKofb.o
+ .debug_abbrev  0x0000000000000046       0xc3 /tmp/ccoe70R9.o
+ .debug_abbrev  0x0000000000000109       0x5c /tmp/ccsuoFdg.o
+ .debug_abbrev  0x0000000000000165       0x14 /tmp/cc37oFNl.o
+ .debug_abbrev  0x0000000000000179       0x12 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
+ .debug_abbrev  0x000000000000018b       0x14 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
+ .debug_abbrev  0x000000000000019f      0x192 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
+ .debug_abbrev  0x0000000000000331      0x176 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
+ .debug_abbrev  0x00000000000004a7      0x237 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+ .debug_abbrev  0x00000000000006de      0x237 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+ .debug_abbrev  0x0000000000000915      0x3a4 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+ .debug_abbrev  0x0000000000000cb9      0x1df /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+ .debug_abbrev  0x0000000000000e98      0x129 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+ .debug_abbrev  0x0000000000000fc1      0x1df /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+ .debug_abbrev  0x00000000000011a0      0x1d0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+ .debug_abbrev  0x0000000000001370       0x4d /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
 
-.debug_aranges  0x0000000000000000      0x2e8
+.debug_aranges  0x0000000000000000      0x338
  .debug_aranges
-                0x0000000000000000       0x20 /tmp/ccVtku3D.o
+                0x0000000000000000       0x20 /tmp/ccbYKofb.o
  .debug_aranges
-                0x0000000000000020       0x20 /tmp/ccC6KnYt.o
+                0x0000000000000020       0x30 /tmp/ccoe70R9.o
  .debug_aranges
-                0x0000000000000040       0x30 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
+                0x0000000000000050       0x20 /tmp/ccsuoFdg.o
  .debug_aranges
-                0x0000000000000070       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
+                0x0000000000000070       0x20 /tmp/cc37oFNl.o
  .debug_aranges
-                0x0000000000000090       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
+                0x0000000000000090       0x30 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
  .debug_aranges
-                0x00000000000000b0       0x18 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
+                0x00000000000000c0       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
  .debug_aranges
-                0x00000000000000c8       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+                0x00000000000000e0       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
  .debug_aranges
-                0x0000000000000110       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+                0x0000000000000100       0x18 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
  .debug_aranges
-                0x0000000000000158       0xa0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x0000000000000118       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
  .debug_aranges
-                0x00000000000001f8       0x30 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+                0x0000000000000160       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
  .debug_aranges
-                0x0000000000000228       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+                0x00000000000001a8       0xa0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .debug_aranges
-                0x0000000000000270       0x28 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+                0x0000000000000248       0x30 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
  .debug_aranges
-                0x0000000000000298       0x30 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+                0x0000000000000278       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
  .debug_aranges
-                0x00000000000002c8       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+                0x00000000000002c0       0x28 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+ .debug_aranges
+                0x00000000000002e8       0x30 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+ .debug_aranges
+                0x0000000000000318       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
 
-.debug_ranges   0x0000000000000000      0x1e8
- .debug_ranges  0x0000000000000000       0x10 /tmp/ccVtku3D.o
- .debug_ranges  0x0000000000000010       0x28 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
- .debug_ranges  0x0000000000000038       0x10 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
- .debug_ranges  0x0000000000000048       0x38 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
- .debug_ranges  0x0000000000000080       0x38 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
- .debug_ranges  0x00000000000000b8       0x90 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
- .debug_ranges  0x0000000000000148       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
- .debug_ranges  0x0000000000000168       0x38 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
- .debug_ranges  0x00000000000001a0       0x18 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
- .debug_ranges  0x00000000000001b8       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
- .debug_ranges  0x00000000000001d8       0x10 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+.debug_ranges   0x0000000000000000      0x218
+ .debug_ranges  0x0000000000000000       0x10 /tmp/ccbYKofb.o
+ .debug_ranges  0x0000000000000010       0x20 /tmp/ccoe70R9.o
+ .debug_ranges  0x0000000000000030       0x10 /tmp/ccsuoFdg.o
+ .debug_ranges  0x0000000000000040       0x28 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
+ .debug_ranges  0x0000000000000068       0x10 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
+ .debug_ranges  0x0000000000000078       0x38 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+ .debug_ranges  0x00000000000000b0       0x38 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+ .debug_ranges  0x00000000000000e8       0x90 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+ .debug_ranges  0x0000000000000178       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+ .debug_ranges  0x0000000000000198       0x38 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+ .debug_ranges  0x00000000000001d0       0x18 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+ .debug_ranges  0x00000000000001e8       0x20 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+ .debug_ranges  0x0000000000000208       0x10 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
 
-.debug_line     0x0000000000000000     0x3688
- .debug_line    0x0000000000000000       0xa2 /tmp/ccVtku3D.o
- .debug_line    0x00000000000000a2      0x121 /tmp/ccC6KnYt.o
- .debug_line    0x00000000000001c3      0x118 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
- .debug_line    0x00000000000002db      0x21d /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
- .debug_line    0x00000000000004f8      0x480 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
- .debug_line    0x0000000000000978      0x41b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
- .debug_line    0x0000000000000d93      0x5b7 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
- .debug_line    0x000000000000134a      0x59f /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
- .debug_line    0x00000000000018e9      0xc21 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
- .debug_line    0x000000000000250a      0x50f /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
- .debug_line    0x0000000000002a19      0x1f6 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
- .debug_line    0x0000000000002c0f      0x4b5 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
- .debug_line    0x00000000000030c4      0x54b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
- .debug_line    0x000000000000360f       0x79 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+.debug_line     0x0000000000000000     0x3989
+ .debug_line    0x0000000000000000       0x86 /tmp/ccbYKofb.o
+ .debug_line    0x0000000000000086      0x16f /tmp/ccoe70R9.o
+ .debug_line    0x00000000000001f5       0x82 /tmp/ccsuoFdg.o
+ .debug_line    0x0000000000000277      0x24d /tmp/cc37oFNl.o
+ .debug_line    0x00000000000004c4      0x118 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
+ .debug_line    0x00000000000005dc      0x21d /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
+ .debug_line    0x00000000000007f9      0x480 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
+ .debug_line    0x0000000000000c79      0x41b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
+ .debug_line    0x0000000000001094      0x5b7 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+ .debug_line    0x000000000000164b      0x59f /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+ .debug_line    0x0000000000001bea      0xc21 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+ .debug_line    0x000000000000280b      0x50f /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+ .debug_line    0x0000000000002d1a      0x1f6 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+ .debug_line    0x0000000000002f10      0x4b5 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+ .debug_line    0x00000000000033c5      0x54b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+ .debug_line    0x0000000000003910       0x79 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
 
-.debug_str      0x0000000000000000     0x2199
- .debug_str     0x0000000000000000       0x9a /tmp/ccVtku3D.o
+.debug_str      0x0000000000000000     0x2279
+ .debug_str     0x0000000000000000       0x9a /tmp/ccbYKofb.o
                                          0xa7 (size before relaxing)
- .debug_str     0x000000000000009a       0x13 /tmp/ccC6KnYt.o
-                                         0x39 (size before relaxing)
- .debug_str     0x00000000000000ad       0x6e /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
+ .debug_str     0x000000000000009a       0xb7 /tmp/ccoe70R9.o
+                                        0x15a (size before relaxing)
+ .debug_str     0x0000000000000151       0x2b /tmp/ccsuoFdg.o
+                                         0xd5 (size before relaxing)
+ .debug_str     0x000000000000017c       0x19 /tmp/cc37oFNl.o
+                                         0x3f (size before relaxing)
+ .debug_str     0x0000000000000195       0x6e /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
                                          0x7a (size before relaxing)
- .debug_str     0x000000000000011b       0x3d /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
+ .debug_str     0x0000000000000203       0x3d /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
                                          0x7b (size before relaxing)
- .debug_str     0x0000000000000158     0x126c /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
+ .debug_str     0x0000000000000240     0x1264 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
                                        0x147c (size before relaxing)
- .debug_str     0x00000000000013c4       0x45 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
+ .debug_str     0x00000000000014a4       0x45 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
                                        0x145f (size before relaxing)
- .debug_str     0x0000000000001409      0x182 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+ .debug_str     0x00000000000014e9      0x182 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
                                        0x15bb (size before relaxing)
- .debug_str     0x000000000000158b      0x155 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+ .debug_str     0x000000000000166b      0x155 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
                                        0x15bb (size before relaxing)
- .debug_str     0x00000000000016e0      0x75f /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+ .debug_str     0x00000000000017c0      0x75f /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
                                        0x1c60 (size before relaxing)
- .debug_str     0x0000000000001e3f       0xb1 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+ .debug_str     0x0000000000001f1f       0xb1 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
                                        0x151c (size before relaxing)
- .debug_str     0x0000000000001ef0      0x112 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+ .debug_str     0x0000000000001fd0      0x112 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
                                         0x2b5 (size before relaxing)
- .debug_str     0x0000000000002002       0x83 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+ .debug_str     0x00000000000020e2       0x83 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
                                        0x14b1 (size before relaxing)
- .debug_str     0x0000000000002085       0xc7 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+ .debug_str     0x0000000000002165       0xc7 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
                                        0x14e1 (size before relaxing)
- .debug_str     0x000000000000214c       0x4d /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+ .debug_str     0x000000000000222c       0x4d /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
                                          0xea (size before relaxing)
 
 .comment        0x0000000000000000       0x28
- .comment       0x0000000000000000       0x28 /tmp/ccVtku3D.o
+ .comment       0x0000000000000000       0x28 /tmp/ccbYKofb.o
                                          0x29 (size before relaxing)
+ .comment       0x0000000000000028       0x29 /tmp/ccoe70R9.o
+ .comment       0x0000000000000028       0x29 /tmp/ccsuoFdg.o
  .comment       0x0000000000000028       0x29 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-atexit.o)
  .comment       0x0000000000000028       0x29 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-exit.o)
  .comment       0x0000000000000028       0x29 /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-fini.o)
@@ -1926,56 +1965,62 @@ OUTPUT(giveMe5 elf32-littleriscv)
 .riscv.attributes
                 0x0000000000000000       0x2b
  .riscv.attributes
-                0x0000000000000000       0x2b /tmp/ccVtku3D.o
+                0x0000000000000000       0x2b /tmp/ccbYKofb.o
  .riscv.attributes
-                0x000000000000002b       0x29 /tmp/ccC6KnYt.o
+                0x000000000000002b       0x2b /tmp/ccoe70R9.o
  .riscv.attributes
-                0x0000000000000054       0x29 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
+                0x0000000000000056       0x2b /tmp/ccsuoFdg.o
  .riscv.attributes
-                0x000000000000007d       0x29 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
+                0x0000000000000081       0x29 /tmp/cc37oFNl.o
  .riscv.attributes
-                0x00000000000000a6       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-atexit.o)
+                0x00000000000000aa       0x29 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-entry.o)
  .riscv.attributes
-                0x00000000000000d1       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-exit.o)
+                0x00000000000000d3       0x29 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(crt0.o)
  .riscv.attributes
-                0x00000000000000fc       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-fini.o)
+                0x00000000000000fc       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-atexit.o)
  .riscv.attributes
-                0x0000000000000127       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-impure.o)
+                0x0000000000000127       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-exit.o)
  .riscv.attributes
-                0x0000000000000152       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-init.o)
+                0x0000000000000152       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-fini.o)
  .riscv.attributes
-                0x000000000000017d       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-__atexit.o)
+                0x000000000000017d       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-impure.o)
  .riscv.attributes
-                0x00000000000001a8       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-__call_atexit.o)
+                0x00000000000001a8       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-init.o)
  .riscv.attributes
-                0x00000000000001d3       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
+                0x00000000000001d3       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-__atexit.o)
  .riscv.attributes
-                0x00000000000001fe       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
+                0x00000000000001fe       0x2b /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32/libc_nano.a(lib_a-__call_atexit.o)
  .riscv.attributes
-                0x0000000000000229       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+                0x0000000000000229       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
  .riscv.attributes
-                0x0000000000000254       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+                0x0000000000000254       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-inline.o)
  .riscv.attributes
-                0x000000000000027f       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+                0x000000000000027f       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
  .riscv.attributes
-                0x00000000000002aa       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+                0x00000000000002aa       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
  .riscv.attributes
-                0x00000000000002d5       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+                0x00000000000002d5       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
  .riscv.attributes
-                0x0000000000000300       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+                0x0000000000000300       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
  .riscv.attributes
-                0x000000000000032b       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+                0x000000000000032b       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
  .riscv.attributes
-                0x0000000000000356       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+                0x0000000000000356       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+ .riscv.attributes
+                0x0000000000000381       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+ .riscv.attributes
+                0x00000000000003ac       0x2b /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
 
-.debug_frame    0x0000000000000000      0x750
- .debug_frame   0x0000000000000000       0x38 /tmp/ccVtku3D.o
- .debug_frame   0x0000000000000038       0x34 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
- .debug_frame   0x000000000000006c       0xf0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
- .debug_frame   0x000000000000015c       0xf0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
- .debug_frame   0x000000000000024c      0x28c /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
- .debug_frame   0x00000000000004d8       0x84 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
- .debug_frame   0x000000000000055c       0xfc /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
- .debug_frame   0x0000000000000658       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
- .debug_frame   0x00000000000006a0       0x84 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
- .debug_frame   0x0000000000000724       0x2c /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)
+.debug_frame    0x0000000000000000      0x838
+ .debug_frame   0x0000000000000000       0x2c /tmp/ccbYKofb.o
+ .debug_frame   0x000000000000002c       0x80 /tmp/ccoe70R9.o
+ .debug_frame   0x00000000000000ac       0x74 /tmp/ccsuoFdg.o
+ .debug_frame   0x0000000000000120       0x34 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-synchronize_harts.o)
+ .debug_frame   0x0000000000000154       0xf0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfrosc.o)
+ .debug_frame   0x0000000000000244       0xf0 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_hfxosc.o)
+ .debug_frame   0x0000000000000334      0x28c /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_pll.o)
+ .debug_frame   0x00000000000005c0       0x84 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-sifive_fe310-g000_prci.o)
+ .debug_frame   0x0000000000000644       0xfc /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-clock.o)
+ .debug_frame   0x0000000000000740       0x48 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-shutdown.o)
+ .debug_frame   0x0000000000000788       0x84 /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal.a(libriscv__mmachine__sifive-hifive1-revb_a-fixed-clock.o)
+ .debug_frame   0x000000000000080c       0x2c /home/yon/wsFreedomStudio/GiveMe5/bsp/install/lib/debug//libmetal-gloss.a(sys_exit.o)

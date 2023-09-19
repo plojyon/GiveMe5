@@ -31,3 +31,19 @@ void gpio_output_set_c(unsigned int pin_number, unsigned int value) {
 	}
 	return;
 }
+
+void gpio_output_toggle_c(unsigned int pin_number) {
+	gpio_registers_t *GPIO = (gpio_registers_t*)GPIO_BASE;
+
+	int mask = 1 << pin_number;
+	int previous_value = GPIO->output_value & mask;
+
+	if (previous_value) {
+		gpio_output_set_c(pin_number, 0);
+	}
+	else {
+		gpio_output_set_c(pin_number, 1);
+	}
+
+	return;
+}

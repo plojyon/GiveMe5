@@ -6,6 +6,9 @@
  *
  */
 
+.section .text
+.option norvc // no compressed code
+
 .equ GPIO_BASE, 0x10012000
 .equ GPIO_OE, 0x08 // out_enable
 .equ GPIO_OV, 0x0C // out_value
@@ -78,6 +81,7 @@ gpio_output_set_s:
     lw ra, 12(sp)                   # restore the return address from the stack frame
     addi sp, sp, 16                 # de-allocate the routine stack frame
     ret
+
 
 
 
