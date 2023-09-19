@@ -1,0 +1,2 @@
+gloss/crt0.o: \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S

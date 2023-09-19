@@ -1,0 +1,5 @@
+gloss/sys_exit.o: \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/sys_exit.c \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/shutdown.h
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/shutdown.h:

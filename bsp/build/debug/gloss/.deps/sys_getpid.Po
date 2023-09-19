@@ -1,0 +1,44 @@
+gloss/sys_getpid.o: \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/sys_getpid.c \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/errno.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/errno.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/reent.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/_ansi.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/newlib-nano/newlib.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/_newlib_version.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/config.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/machine/ieeefp.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/features.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/_types.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/machine/_types.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/machine/_default_types.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/lock.h
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/errno.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/errno.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/reent.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/_ansi.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/newlib-nano/newlib.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/_newlib_version.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/config.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/machine/ieeefp.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/features.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/_types.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/machine/_types.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/machine/_default_types.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/lock.h:

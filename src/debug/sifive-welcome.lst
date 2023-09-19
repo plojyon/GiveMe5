@@ -1,0 +1,2821 @@
+
+/home/yon/wsFreedomStudio/GiveMe5/src/debug/sifive-welcome.elf:     file format elf32-littleriscv
+/home/yon/wsFreedomStudio/GiveMe5/src/debug/sifive-welcome.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x20010000
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x20010000 paddr 0x20010000 align 2**12
+         filesz 0x00001750 memsz 0x00001750 flags rwx
+    LOAD off    0x000030e0 vaddr 0x800000e0 paddr 0x800000e0 align 2**12
+         filesz 0x00000000 memsz 0x00000c90 flags rw-
+    LOAD off    0x00003000 vaddr 0x80000000 paddr 0x20011750 align 2**12
+         filesz 0x000000e0 memsz 0x000000e0 flags rw-
+    LOAD off    0x000030e0 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00000000 memsz 0x00000000 flags ---
+    LOAD off    0x000030e0 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00000000 memsz 0x00000000 flags ---
+
+Sections:
+Idx Name              Size      VMA       LMA       File off  Algn  Flags
+  0 .init             0000018a  20010000  20010000  00001000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text             00000d18  2001018c  2001018c  0000118c  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rodata           000008a4  20010ea4  20010ea4  00001ea4  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .init_array       00000008  20011748  20011748  00002748  2**2  CONTENTS, ALLOC, LOAD, DATA
+  4 .data             000000e0  80000000  20011750  00003000  2**3  CONTENTS, ALLOC, LOAD, DATA
+  5 .bss              00000090  800000e0  800000e0  000030e0  2**3  ALLOC
+  6 .stack            00000400  80000170  80000170  000030e0  2**0  ALLOC
+  7 .heap             00000800  80000570  80000570  000030e0  2**0  ALLOC
+  8 .debug_info       0000e4f0  00000000  00000000  000030e0  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_abbrev     00001293  00000000  00000000  000115d0  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_aranges    000002e8  00000000  00000000  00012868  2**3  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges     000001e8  00000000  00000000  00012b50  2**3  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_line       00003629  00000000  00000000  00012d38  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str        00002196  00000000  00000000  00016361  2**0  CONTENTS, READONLY, DEBUGGING
+ 14 .comment          00000028  00000000  00000000  000184f7  2**0  CONTENTS, READONLY
+ 15 .riscv.attributes 0000002b  00000000  00000000  0001851f  2**0  CONTENTS, READONLY
+ 16 .debug_frame      00000750  00000000  00000000  0001854c  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+20010000 l    d  .init	00000000 .init
+2001018c l    d  .text	00000000 .text
+20010ea4 l    d  .rodata	00000000 .rodata
+20011748 l    d  .init_array	00000000 .init_array
+80000000 l    d  .data	00000000 .data
+800000e0 l    d  .bss	00000000 .bss
+80000170 l    d  .stack	00000000 .stack
+80000570 l    d  .heap	00000000 .heap
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 libriscv__mmachine__sifive-hifive1-revb_a-entry.o
+20010060 l       .init	00000000 early_trap_vector
+00000000 l    df *ABS*	00000000 synchronize_harts.c
+00000000 l    df *ABS*	00000000 crt0.o
+2001012e l       .init	00000000 _skip_init
+20010ea4 l       .rodata	00000000 argv
+20010ea8 l       .rodata	00000000 envp
+20010eac l       .rodata	00000000 name
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 /tmp/ccX4ZSze.o
+10012000 l       *ABS*	00000000 GPIO_BASE
+00000008 l       *ABS*	00000000 GPIO_OE
+0000000c l       *ABS*	00000000 GPIO_OV
+00000000 l    df *ABS*	00000000 atexit.c
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 fini.c
+00000000 l    df *ABS*	00000000 init.c
+00000000 l    df *ABS*	00000000 __atexit.c
+800000e4 l     O .bss	0000008c _global_atexit0
+00000000 l    df *ABS*	00000000 __call_atexit.c
+00000000 l    df *ABS*	00000000 sifive_fe310-g000_hfrosc.c
+20010424 l     F .text	0000001a __metal_driver_sifive_fe310_g000_hfrosc_ref
+2001043e l     F .text	0000001a __metal_driver_sifive_fe310_g000_hfrosc_config_base
+20010458 l     F .text	00000014 __metal_driver_sifive_fe310_g000_hfrosc_config_offset
+2001046c l     F .text	00000012 __metal_driver_sifive_fe310_g000_prci_vtable
+00000000 l    df *ABS*	00000000 sifive_fe310-g000_hfxosc.c
+20010524 l     F .text	0000001a __metal_driver_sifive_fe310_g000_hfxosc_ref
+2001053e l     F .text	0000001a __metal_driver_sifive_fe310_g000_hfxosc_config_base
+20010558 l     F .text	00000014 __metal_driver_sifive_fe310_g000_hfxosc_config_offset
+2001056c l     F .text	00000012 __metal_driver_sifive_fe310_g000_prci_vtable
+00000000 l    df *ABS*	00000000 sifive_fe310-g000_pll.c
+20010614 l     F .text	0000001a __metal_driver_sifive_fe310_g000_pll_pllsel0
+2001062e l     F .text	0000001a __metal_driver_sifive_fe310_g000_pll_pllref
+20010648 l     F .text	0000001a __metal_driver_sifive_fe310_g000_pll_divider_base
+20010662 l     F .text	00000014 __metal_driver_sifive_fe310_g000_pll_divider_offset
+20010676 l     F .text	00000016 __metal_driver_sifive_fe310_g000_pll_config_base
+2001068c l     F .text	00000010 __metal_driver_sifive_fe310_g000_pll_config_offset
+2001069c l     F .text	00000016 __metal_driver_sifive_fe310_g000_pll_init_rate
+200106b2 l     F .text	00000012 __metal_driver_sifive_fe310_g000_prci_base
+200106c4 l     F .text	00000012 __metal_driver_sifive_fe310_g000_prci_vtable
+20010eb8 l     O .rodata	00000880 pll_configs
+200106d6 l     F .text	0000004e get_pll_config_freq
+20010724 l     F .text	00000028 metal_sifive_fe310_g000_pll_init
+20010958 l     F .text	000000aa find_closest_config
+20010a02 l     F .text	00000132 configure_pll
+20010c88 l     F .text	00000026 use_hfxosc
+00000000 l    df *ABS*	00000000 sifive_fe310-g000_prci.c
+20010cae l     F .text	00000012 __metal_driver_sifive_fe310_g000_prci_base
+00000000 l    df *ABS*	00000000 clock.c
+00000000 l    df *ABS*	00000000 shutdown.c
+00000000 l    df *ABS*	00000000 fixed-clock.c
+20010de2 l     F .text	00000070 __metal_driver_fixed_clock_rate
+00000000 l    df *ABS*	00000000 sys_exit.c
+00000000 l    df *ABS*	00000000 impure.c
+80000000 l     O .data	00000060 impure_data
+00000000 l    df *ABS*	00000000 inline.c
+00000000 l    df *ABS*	00000000 
+20011750 l       .init_array	00000000 __fini_array_end
+20011750 l       .init_array	00000000 __fini_array_start
+20011750 l       .init_array	00000000 __init_array_end
+20011748 l       .init_array	00000000 __preinit_array_end
+20011748 l       .init_array	00000000 __init_array_start
+20011748 l       .init_array	00000000 __preinit_array_start
+20010d66 g     F .text	00000026 metal_clock_get_rate_hz
+800008b8 g       .data	00000000 __global_pointer$
+80000170 g       .bss	00000000 metal_segment_bss_target_end
+00000000 g       *ABS*	00000000 __metal_chicken_bit
+08000000 g       .init_array	00000000 metal_segment_itim_target_start
+20010070 g     F .init	0000000e __metal_synchronize_harts
+800000e0 g       .bss	00000000 metal_segment_bss_target_start
+200107ec g     F .text	0000016c __metal_driver_sifive_fe310_g000_pll_get_rate_hz
+00000400 g       *ABS*	00000000 __stack_size
+20011738 g     O .rodata	0000000c __metal_driver_vtable_sifive_fe310_g000_pll
+20010b34 g     F .text	00000154 __metal_driver_sifive_fe310_g000_pll_set_rate_hz
+200101ac g     F .text	00000000 gpio_output_enable
+8000006c g     O .data	0000000c __metal_dt_clock_2
+800000d8 g     O .data	00000008 __metal_driver_vtable_fixed_clock
+800000b8 g     O .data	00000004 _global_impure_ptr
+2001027a g     F .text	0000006a __libc_init_array
+200105f2 g     F .text	00000022 __metal_driver_sifive_fe310_g000_hfxosc_set_rate_hz
+20010d26 g     F .text	00000040 _metal_clock_call_all_callbacks
+2001016a g     F .init	00000002 _init
+20010242 g     F .text	00000038 __libc_fini_array
+800000a8 g     O .data	0000000c __metal_dt_clock_4
+80000000 g       .data	00000000 metal_segment_data_target_start
+80000060 g     O .data	0000000c __metal_dt_clock_0
+00000800 g       *ABS*	00000000 __heap_size
+800000e0 g     O .bss	00000004 _global_atexit
+20010360 g     F .text	000000c4 __call_exitprocs
+80000570 g       .stack	00000000 _sp
+2001007e g     F .init	00000000 _start
+2001047e g     F .text	00000084 __metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz
+200102e4 g     F .text	0000007c __register_exitproc
+20010d8c g     F .text	00000048 metal_clock_set_rate_hz
+2001016c  w    F .init	00000000 secondary_main
+20010cc0 g     F .text	0000002e __metal_driver_sifive_fe310_g000_prci_get_reg
+2001018c g     F .text	0000001e main
+800000e0 g       .data	00000000 metal_segment_data_target_end
+800000c0 g     O .data	00000008 __metal_driver_vtable_sifive_fe310_g000_hfrosc
+20010dd4 g     F .text	0000000e metal_shutdown
+08000000 g       .init_array	00000000 metal_segment_itim_target_end
+800000bc g     O .data	00000004 __metal_dt_prci_10008000
+20010000 g       .init	00000000 _enter
+2001057e g     F .text	00000074 __metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz
+20011750 g       *ABS*	00000000 metal_segment_itim_source_start
+2001016a g     F .init	00000002 _fini
+2001020c g     F .text	0000000a atexit
+2001074c g     F .text	000000a0 __metal_driver_sifive_fe310_g000_pll_init
+80000078 g     O .data	0000000c __metal_dt_clock_5
+20010cee g     F .text	00000038 __metal_driver_sifive_fe310_g000_prci_set_reg
+20010e52 g     F .text	0000001e __metal_driver_fixed_clock_get_rate_hz
+20011750 g       *ABS*	00000000 metal_segment_data_source_start
+8000009c g     O .data	0000000c __metal_dt_clock_1
+20010216 g     F .text	0000002c exit
+20010e70 g     F .text	00000022 __metal_driver_fixed_clock_set_rate_hz
+20010e92 g     F .text	00000012 _exit
+800000c8 g     O .data	00000008 __metal_driver_vtable_sifive_fe310_g000_hfxosc
+2001006e  w      .init	00000000 __register_frame_info
+20010502 g     F .text	00000022 __metal_driver_sifive_fe310_g000_hfrosc_set_rate_hz
+200101dc g     F .text	00000000 gpio_output_set
+80000090 g     O .data	0000000c __metal_dt_clock_3
+80000084 g     O .data	0000000c __metal_dt_clock_6
+800000d0 g     O .data	00000008 __metal_driver_vtable_sifive_fe310_g000_prci
+00000000 g       *ABS*	00000000 __metal_boot_hart
+
+
+
+Disassembly of section .init:
+
+20010000 <_enter>:
+_enter():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:24
+     * it's not valid to obtain the address of any symbol without GP
+     * configured.  The C environment might go ahead and do this again, but
+     * that's safe as it's a fixed register. */
+.option push
+.option norelax
+    la gp, __global_pointer$
+20010000:	5fff1197          	auipc	gp,0x5fff1
+20010004:	8b818193          	addi	gp,gp,-1864 # 800008b8 <__global_pointer$>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:29
+.option pop
+
+    /* Set up a simple trap vector to catch anything that goes wrong early in
+     * the boot process. */
+    la t0, early_trap_vector
+20010008:	00000297          	auipc	t0,0x0
+2001000c:	05828293          	addi	t0,t0,88 # 20010060 <early_trap_vector>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:30
+    csrw mtvec, t0
+20010010:	30529073          	csrw	mtvec,t0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:32
+    /* enable chicken bit if core is bullet series*/
+    la t0, __metal_chicken_bit
+20010014:	00000293          	li	t0,0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:33
+    beqz t0, 1f
+20010018:	00028463          	beqz	t0,20010020 <_enter+0x20>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:34
+    csrwi 0x7C1, 0
+2001001c:	7c105073          	csrwi	0x7c1,0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:43
+     * C, so here we set up a C environment.  First we set up a stack pointer,
+     * which is left as a weak reference in order to allow initialization
+     * routines that do not need a stack to be set up to transparently be
+     * called. */
+    .weak __metal_stack_pointer
+    la sp, __metal_stack_pointer
+20010020:	dfff0117          	auipc	sp,0xdfff0
+20010024:	fe010113          	addi	sp,sp,-32 # 0 <__metal_boot_hart>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:52
+     * actually a full C function, as it doesn't end up with the .bss or .data
+     * segments having been initialized.  This is done to avoid putting a
+     * burden on systems that can be initialized without having a C environment
+     * set up. */
+    .weak __metal_before_start
+    la ra, __metal_before_start
+20010028:	dfff0097          	auipc	ra,0xdfff0
+2001002c:	fd808093          	addi	ra,ra,-40 # 0 <__metal_boot_hart>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:53
+    beqz ra, 1f
+20010030:	00008363          	beqz	ra,20010036 <_enter+0x36>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:54
+    jalr ra
+20010034:	9082                	jalr	ra
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:60
+1:
+
+    /* At this point we can enter the C runtime's startup file.  The arguments
+     * to this function are designed to match those provided to the SEE, just
+     * so we don't have to write another ABI. */
+    csrr a0, mhartid
+20010036:	f1402573          	csrr	a0,mhartid
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:61
+    li a1, 0
+2001003a:	4581                	li	a1,0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:62
+    li a2, 0
+2001003c:	4601                	li	a2,0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:63
+    call _start
+2001003e:	2081                	jal	2001007e <_start>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:68
+
+    /* If we've made it back here then there's probably something wrong.  We
+     * allow the METAL to register a handler here. */
+    .weak __metal_after_main
+    la ra, __metal_after_main
+20010040:	dfff0097          	auipc	ra,0xdfff0
+20010044:	fc008093          	addi	ra,ra,-64 # 0 <__metal_boot_hart>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:69
+    beqz ra, 1f
+20010048:	00008363          	beqz	ra,2001004e <_enter+0x4e>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:70
+    jalr ra
+2001004c:	9082                	jalr	ra
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:75
+1:
+
+    /* If that handler returns then there's not a whole lot we can do.  Just
+     * try to make some noise. */
+     la t0, 1f
+2001004e:	00000297          	auipc	t0,0x0
+20010052:	00c28293          	addi	t0,t0,12 # 2001005a <_enter+0x5a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:76
+     csrw mtvec, t0
+20010056:	30529073          	csrw	mtvec,t0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:78
+1:
+     lw t1, 0(x0)
+2001005a:	00002303          	lw	t1,0(zero) # 0 <__metal_boot_hart>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:79
+     j 1b
+2001005e:	bff5                	j	2001005a <_enter+0x5a>
+
+20010060 <early_trap_vector>:
+early_trap_vector():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:89
+ * you end up here then there's a bug in the early boot code somewhere. */
+.section .text.metal.init.trapvec
+.align 2
+early_trap_vector:
+    .cfi_startproc
+    csrr t0, mcause
+20010060:	342022f3          	csrr	t0,mcause
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:90
+    csrr t1, mepc
+20010064:	34102373          	csrr	t1,mepc
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:91
+    csrr t2, mtval
+20010068:	343023f3          	csrr	t2,mtval
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:92
+    j early_trap_vector
+2001006c:	bfd5                	j	20010060 <early_trap_vector>
+
+2001006e <__register_frame_info>:
+__register_frame_info():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/entry.S:105
+.weak __register_frame_info
+.global __register_frame_info
+.section .text.metal.init.__register_frame_info
+__register_frame_info:
+    .cfi_startproc
+    ret
+2001006e:	8082                	ret
+
+20010070 <__metal_synchronize_harts>:
+__metal_synchronize_harts():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/synchronize_harts.c:19
+ * _synchronize_harts() is called by crt0.S to cause harts > 0 to wait for
+ * hart 0 to finish copying the datat section, zeroing the BSS, and running
+ * the libc contstructors.
+ */
+__attribute__((section(".init")))
+void __metal_synchronize_harts() {
+20010070:	1141                	addi	sp,sp,-16
+20010072:	c622                	sw	s0,12(sp)
+20010074:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/synchronize_harts.c:61
+        /* Wait for hart 0 to clear the MSIP bit */
+        while (METAL_MSIP(msip_base, hart) == 1) ;
+    }
+
+#endif /* __METAL_DT_MAX_HARTS > 1 */
+}
+20010076:	0001                	nop
+20010078:	4432                	lw	s0,12(sp)
+2001007a:	0141                	addi	sp,sp,16
+2001007c:	8082                	ret
+
+2001007e <_start>:
+_start():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:36
+.cfi_startproc
+.cfi_undefined ra
+
+  /* This is a bit funky: it's not usually sane for _start to return, but in
+   * this case we actually want to in order to signal an error to the METAL. */
+  mv s0, ra
+2001007e:	8406                	mv	s0,ra
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:44
+   * safely perform any access that may be relaxed without GP being set.  This
+   * is done with relaxation disabled to avoid relaxing the address calculation
+   * to just "addi gp, gp, 0". */
+.option push
+.option norelax
+  la gp, __global_pointer$
+20010080:	5fff1197          	auipc	gp,0x5fff1
+20010084:	83818193          	addi	gp,gp,-1992 # 800008b8 <__global_pointer$>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:51
+
+  /* The METAL is designed for a bare-metal environment and therefor is expected
+   * to define its own stack pointer.  We also align the stack pointer here
+   * because the only RISC-V ABI that's currently defined mandates 16-byte
+   * stack alignment. */
+  la sp, _sp
+20010088:	cb818113          	addi	sp,gp,-840 # 80000570 <_sp>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:54
+
+  /* Increment by hartid number of stack sizes */
+  li t0, 0
+2001008c:	4281                	li	t0,0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:55
+  la t1, __stack_size
+2001008e:	40000313          	li	t1,1024
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:57
+1:
+  beq t0, a0, 1f
+20010092:	00a28563          	beq	t0,a0,2001009c <_start+0x1e>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:58
+  add sp, sp, t1
+20010096:	911a                	add	sp,sp,t1
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:59
+  addi t0, t0, 1
+20010098:	0285                	addi	t0,t0,1
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:60
+  j 1b
+2001009a:	bfe5                	j	20010092 <_start+0x14>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:62
+1:
+  andi sp, sp, -16
+2001009c:	ff017113          	andi	sp,sp,-16
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:65
+
+  /* If we're not hart 0, skip the initialization work */
+  la t0, __metal_boot_hart
+200100a0:	00000293          	li	t0,0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:66
+  bne a0, t0, _skip_init
+200100a4:	08551563          	bne	a0,t0,2001012e <_skip_init>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:75
+   * boot and then need to get relocated into a non-persistant writable memory
+   * before C code can execute.  If this is the case we do so here.  This step
+   * is optional: if the METAL provides an environment in which this relocation
+   * is not necessary then it must simply set metal_segment_data_source_start to
+   * be equal to metal_segment_data_target_start. */
+  la t0, metal_segment_data_source_start
+200100a8:	00001297          	auipc	t0,0x1
+200100ac:	6a828293          	addi	t0,t0,1704 # 20011750 <metal_segment_data_source_start>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:76
+  la t1, metal_segment_data_target_start
+200100b0:	5fff0317          	auipc	t1,0x5fff0
+200100b4:	f5030313          	addi	t1,t1,-176 # 80000000 <metal_segment_data_target_start>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:77
+  la t2, metal_segment_data_target_end
+200100b8:	82818393          	addi	t2,gp,-2008 # 800000e0 <metal_segment_data_target_end>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:79
+
+  beq t0, t1, 2f
+200100bc:	00628c63          	beq	t0,t1,200100d4 <_start+0x56>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:80
+  bge t1, t2, 2f
+200100c0:	00735a63          	bge	t1,t2,200100d4 <_start+0x56>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:84
+
+1:
+#if __riscv_xlen == 32
+  lw   a0, 0(t0)
+200100c4:	0002a503          	lw	a0,0(t0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:85
+  addi t0, t0, 4
+200100c8:	0291                	addi	t0,t0,4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:86
+  sw   a0, 0(t1)
+200100ca:	00a32023          	sw	a0,0(t1)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:87
+  addi t1, t1, 4
+200100ce:	0311                	addi	t1,t1,4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:88
+  blt  t1, t2, 1b
+200100d0:	fe734ae3          	blt	t1,t2,200100c4 <_start+0x46>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:99
+  blt  t1, t2, 1b
+#endif
+2:
+
+  /* Copy the ITIM section */
+  la t0, metal_segment_itim_source_start
+200100d4:	00001297          	auipc	t0,0x1
+200100d8:	67c28293          	addi	t0,t0,1660 # 20011750 <metal_segment_data_source_start>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:100
+  la t1, metal_segment_itim_target_start
+200100dc:	e7ff0317          	auipc	t1,0xe7ff0
+200100e0:	f2430313          	addi	t1,t1,-220 # 8000000 <metal_segment_itim_target_end>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:101
+  la t2, metal_segment_itim_target_end
+200100e4:	e7ff0397          	auipc	t2,0xe7ff0
+200100e8:	f1c38393          	addi	t2,t2,-228 # 8000000 <metal_segment_itim_target_end>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:103
+
+  beq t0, t1, 2f
+200100ec:	00628c63          	beq	t0,t1,20010104 <_start+0x86>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:104
+  bge t1, t2, 2f
+200100f0:	00735a63          	bge	t1,t2,20010104 <_start+0x86>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:108
+
+1:
+#if __riscv_xlen == 32
+  lw   a0, 0(t0)
+200100f4:	0002a503          	lw	a0,0(t0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:109
+  addi t0, t0, 4
+200100f8:	0291                	addi	t0,t0,4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:110
+  sw   a0, 0(t1)
+200100fa:	00a32023          	sw	a0,0(t1)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:111
+  addi t1, t1, 4
+200100fe:	0311                	addi	t1,t1,4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:112
+  blt  t1, t2, 1b
+20010100:	fe734ae3          	blt	t1,t2,200100f4 <_start+0x76>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:124
+#endif
+2:
+
+  /* Fence all subsequent instruction fetches until after the ITIM writes
+     complete */
+  fence.i
+20010104:	0000100f          	fence.i
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:127
+
+  /* Zero the BSS segment. */
+  la t1, metal_segment_bss_target_start
+20010108:	82818313          	addi	t1,gp,-2008 # 800000e0 <metal_segment_data_target_end>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:128
+  la t2, metal_segment_bss_target_end
+2001010c:	8b818393          	addi	t2,gp,-1864 # 80000170 <metal_segment_bss_target_end>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:130
+
+  bge t1, t2, 2f
+20010110:	00735763          	bge	t1,t2,2001011e <_start+0xa0>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:134
+
+1:
+#if __riscv_xlen == 32
+  sw   x0, 0(t1)
+20010114:	00032023          	sw	zero,0(t1)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:135
+  addi t1, t1, 4
+20010118:	0311                	addi	t1,t1,4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:136
+  blt  t1, t2, 1b
+2001011a:	fe734de3          	blt	t1,t2,20010114 <_start+0x96>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:147
+2:
+
+  /* At this point we're in an environment that can execute C code.  The first
+   * thing to do is to make the callback to the parent environment if it's been
+   * requested to do so. */
+  beqz a2, 1f
+2001011e:	c211                	beqz	a2,20010122 <_start+0xa4>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:148
+  jalr a2
+20010120:	9602                	jalr	a2
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:152
+1:
+
+  /* The RISC-V port only uses new-style constructors and destructors. */
+  la a0, __libc_fini_array
+20010122:	00000517          	auipc	a0,0x0
+20010126:	12050513          	addi	a0,a0,288 # 20010242 <__libc_fini_array>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:153
+  call atexit
+2001012a:	20cd                	jal	2001020c <atexit>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:154
+  call __libc_init_array
+2001012c:	22b9                	jal	2001027a <__libc_init_array>
+
+2001012e <_skip_init>:
+_skip_init():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:160
+
+_skip_init:
+
+  /* Synchronize harts so that secondary harts wait until hart 0 finishes
+     initializing */
+  call __metal_synchronize_harts
+2001012e:	3789                	jal	20010070 <__metal_synchronize_harts>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:163
+
+  /* Check RISC-V isa and enable FS bits if Floating Point architecture. */
+  csrr a5, misa
+20010130:	301027f3          	csrr	a5,misa
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:164
+  li   a4, 0x10028
+20010134:	00010737          	lui	a4,0x10
+20010138:	02870713          	addi	a4,a4,40 # 10028 <__heap_size+0xf828>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:165
+  and  a5, a5, a4
+2001013c:	8ff9                	and	a5,a5,a4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:166
+  beqz a5, 1f
+2001013e:	cb89                	beqz	a5,20010150 <_skip_init+0x22>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:167
+  csrr a5, mstatus
+20010140:	300027f3          	csrr	a5,mstatus
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:168
+  lui  a4, 0x2
+20010144:	6709                	lui	a4,0x2
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:169
+  or   a5, a5, a4
+20010146:	8fd9                	or	a5,a5,a4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:170
+  csrw mstatus, a5
+20010148:	30079073          	csrw	mstatus,a5
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:171
+  csrwi fcsr, 0
+2001014c:	00305073          	csrwi	fcsr,0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:177
+1:
+
+  /* This is a C runtime, so main() is defined to have some arguments.  Since
+   * there's nothing sane the METAL can pass we don't bother with that but
+   * instead just setup as close to a NOP as we can. */
+  li a0, 1     /* argc=1 */
+20010150:	4505                	li	a0,1
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:178
+  la a1, argv  /* argv = {"libgloss", NULL} */
+20010152:	00001597          	auipc	a1,0x1
+20010156:	d5258593          	addi	a1,a1,-686 # 20010ea4 <argv>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:179
+  la a2, envp  /* envp = {NULL} */
+2001015a:	00001617          	auipc	a2,0x1
+2001015e:	d4e60613          	addi	a2,a2,-690 # 20010ea8 <envp>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:180
+  call secondary_main
+20010162:	2029                	jal	2001016c <secondary_main>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:186
+
+  /* Call exit to handle libc's cleanup routines.  Under normal contains this
+   * shouldn't even get called, but I'm still not using a tail call here
+   * because returning to the METAL is the right thing to do in pathological
+   * situations. */
+  call exit
+20010164:	284d                	jal	20010216 <exit>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:191
+
+  /* And here's where we return.  Again, it's a bit odd but the METAL defines
+   * this as a bad idea (ie, as opposed to leaving it undefined) and at this
+   * point it's really the only thing left to do. */
+  mv ra, s0
+20010166:	80a2                	mv	ra,s0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:192
+  ret
+20010168:	8082                	ret
+
+2001016a <_fini>:
+_init():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:204
+.type   _init, @function
+.global _fini
+.type   _fini, @function
+_init:
+_fini:
+  ret
+2001016a:	8082                	ret
+
+2001016c <secondary_main>:
+secondary_main():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:215
+.weak   secondary_main
+.global secondary_main
+.type   secondary_main, @function
+
+secondary_main:
+  addi sp, sp, -16
+2001016c:	1141                	addi	sp,sp,-16
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:217
+#if __riscv_xlen == 32
+  sw ra, 4(sp)
+2001016e:	c206                	sw	ra,4(sp)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:221
+#else
+  sd ra, 8(sp)
+#endif
+  csrr t0, mhartid
+20010170:	f14022f3          	csrr	t0,mhartid
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:222
+  la t1, __metal_boot_hart
+20010174:	00000313          	li	t1,0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:223
+  beq t0, t1, 2f
+20010178:	00628563          	beq	t0,t1,20010182 <secondary_main+0x16>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:225
+1:
+  wfi
+2001017c:	10500073          	wfi
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:226
+  j 1b
+20010180:	bff5                	j	2001017c <secondary_main+0x10>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:228
+2:
+  call main
+20010182:	2029                	jal	2001018c <main>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:230
+#if __riscv_xlen == 32
+  lw ra, 4(sp)
+20010184:	4092                	lw	ra,4(sp)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:234
+#else
+  ld ra, 8(sp)
+#endif
+  addi sp, sp, 16
+20010186:	0141                	addi	sp,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/crt0.S:235
+  ret
+20010188:	8082                	ret
+
+Disassembly of section .text:
+
+2001018c <main>:
+main():
+/home/yon/wsFreedomStudio/GiveMe5/src/main.c:9
+ *  Created on: Sep 18, 2023
+ *      Author: yon
+ */
+#include "main.h"
+
+int main(void) {
+2001018c:	1141                	addi	sp,sp,-16
+2001018e:	c606                	sw	ra,12(sp)
+20010190:	c422                	sw	s0,8(sp)
+20010192:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/src/main.c:10
+	gpio_output_enable(LED_GREEN);
+20010194:	454d                	li	a0,19
+20010196:	2819                	jal	200101ac <gpio_output_enable>
+/home/yon/wsFreedomStudio/GiveMe5/src/main.c:11
+	gpio_output_set(LED_GREEN, LED_ON);
+20010198:	4581                	li	a1,0
+2001019a:	454d                	li	a0,19
+2001019c:	2081                	jal	200101dc <gpio_output_set>
+/home/yon/wsFreedomStudio/GiveMe5/src/main.c:12
+	return 0;
+2001019e:	4781                	li	a5,0
+/home/yon/wsFreedomStudio/GiveMe5/src/main.c:13
+}
+200101a0:	853e                	mv	a0,a5
+200101a2:	40b2                	lw	ra,12(sp)
+200101a4:	4422                	lw	s0,8(sp)
+200101a6:	0141                	addi	sp,sp,16
+200101a8:	8082                	ret
+	...
+
+200101ac <gpio_output_enable>:
+gpio_output_enable():
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:19
+.align 2                            // Align to 4 (=2^2) bytes boundary == .balign 4
+.global gpio_output_enable          // Emit functgion_name to symbol table (scope GLOBAL)
+.type gpio_output_enable, @function // Not needed
+gpio_output_enable:
+    # prologue (save three saved registers and the return address)
+    addi sp, sp, -16                # Allocate the routine stack frame
+200101ac:	1141                	addi	sp,sp,-16
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:20
+    sw ra, 12(sp)                   # Save the return address
+200101ae:	c606                	sw	ra,12(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:21
+    sw fp, 8(sp)                    # Save the frame pointer
+200101b0:	c422                	sw	s0,8(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:22
+    sw s1, 4(sp)
+200101b2:	c226                	sw	s1,4(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:23
+    sw s2, 0(sp)
+200101b4:	c04a                	sw	s2,0(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:24
+    addi fp, sp, 16                 # Set the framepointer
+200101b6:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:26
+
+	la t0, GPIO_BASE
+200101b8:	100122b7          	lui	t0,0x10012
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:27
+	lw t1, GPIO_OE(t0)
+200101bc:	0082a303          	lw	t1,8(t0) # 10012008 <GPIO_BASE+0x8>
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:28
+	li t2, 19
+200101c0:	43cd                	li	t2,19
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:29
+	li t3, 0x01
+200101c2:	4e05                	li	t3,1
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:30
+	sll t3, t3, t2
+200101c4:	007e1e33          	sll	t3,t3,t2
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:31
+	or t1, t1, t3
+200101c8:	01c36333          	or	t1,t1,t3
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:32
+	sw t1, GPIO_OE(t0)
+200101cc:	0062a423          	sw	t1,8(t0)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:35
+
+    # epilogue (restore three saved registers and the return address):
+    lw s2, 0(sp)
+200101d0:	4902                	lw	s2,0(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:36
+    lw s1, 4(sp)
+200101d2:	4492                	lw	s1,4(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:37
+    lw fp, 8(sp)                    # restore the frame pointer
+200101d4:	4422                	lw	s0,8(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:38
+    lw ra, 12(sp)                   # restore the return address from the stack frame
+200101d6:	40b2                	lw	ra,12(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:39
+    addi sp, sp, 16                 # de-allocate the routine stack frame
+200101d8:	0141                	addi	sp,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:40
+    ret
+200101da:	8082                	ret
+
+200101dc <gpio_output_set>:
+gpio_output_set():
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:51
+.align 2
+.global gpio_output_set
+.type gpio_output_set, @function
+gpio_output_set:
+    # prologue (save three saved registers and the return address)
+    addi sp, sp, -16                # Allocate the routine stack frame
+200101dc:	1141                	addi	sp,sp,-16
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:52
+    sw ra, 12(sp)                   # Save the return address
+200101de:	c606                	sw	ra,12(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:53
+    sw fp, 8(sp)                    # Save the frame pointer
+200101e0:	c422                	sw	s0,8(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:54
+    sw s1, 4(sp)
+200101e2:	c226                	sw	s1,4(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:55
+    sw s2, 0(sp)
+200101e4:	c04a                	sw	s2,0(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:56
+    addi fp, sp, 16                 # Set the framepointer
+200101e6:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:59
+
+
+	la t0, GPIO_BASE // t0 <- GPIO_BASE
+200101e8:	100122b7          	lui	t0,0x10012
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:60
+	lw t1, GPIO_OV(t0) // t1 <- value[GPIO_BASE]
+200101ec:	00c2a303          	lw	t1,12(t0) # 1001200c <GPIO_BASE+0xc>
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:63
+
+	//li t2, a0
+	li t3, 0x01
+200101f0:	4e05                	li	t3,1
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:64
+	sll t3, t3, a0 // t3 <- 2^a0
+200101f2:	00ae1e33          	sll	t3,t3,a0
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:66
+
+	or t1, t1, t3 // t1 |= 2^a0
+200101f6:	01c36333          	or	t1,t1,t3
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:67
+	sw t1, GPIO_OV(t0)
+200101fa:	0062a623          	sw	t1,12(t0)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:71
+
+
+    # epilogue (restore three saved registers and the return address):
+    lw s2, 0(sp)
+200101fe:	4902                	lw	s2,0(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:72
+    lw s1, 4(sp)
+20010200:	4492                	lw	s1,4(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:73
+    lw fp, 8(sp)                    # restore the frame pointer
+20010202:	4422                	lw	s0,8(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:74
+    lw ra, 12(sp)                   # restore the return address from the stack frame
+20010204:	40b2                	lw	ra,12(sp)
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:75
+    addi sp, sp, 16                 # de-allocate the routine stack frame
+20010206:	0141                	addi	sp,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/src/gpio.S:76
+    ret
+20010208:	8082                	ret
+	...
+
+2001020c <atexit>:
+atexit():
+2001020c:	85aa                	mv	a1,a0
+2001020e:	4681                	li	a3,0
+20010210:	4601                	li	a2,0
+20010212:	4501                	li	a0,0
+20010214:	a8c1                	j	200102e4 <__register_exitproc>
+
+20010216 <exit>:
+exit():
+20010216:	1141                	addi	sp,sp,-16
+20010218:	c422                	sw	s0,8(sp)
+2001021a:	c606                	sw	ra,12(sp)
+2001021c:	00000797          	auipc	a5,0x0
+20010220:	14478793          	addi	a5,a5,324 # 20010360 <__call_exitprocs>
+20010224:	842a                	mv	s0,a0
+20010226:	c399                	beqz	a5,2001022c <exit+0x16>
+20010228:	4581                	li	a1,0
+2001022a:	2a1d                	jal	20010360 <__call_exitprocs>
+2001022c:	5fff0797          	auipc	a5,0x5fff0
+20010230:	e8c78793          	addi	a5,a5,-372 # 800000b8 <_global_impure_ptr>
+20010234:	4388                	lw	a0,0(a5)
+20010236:	551c                	lw	a5,40(a0)
+20010238:	c391                	beqz	a5,2001023c <exit+0x26>
+2001023a:	9782                	jalr	a5
+2001023c:	8522                	mv	a0,s0
+2001023e:	455000ef          	jal	ra,20010e92 <_exit>
+
+20010242 <__libc_fini_array>:
+__libc_fini_array():
+20010242:	1141                	addi	sp,sp,-16
+20010244:	00001797          	auipc	a5,0x1
+20010248:	50c78793          	addi	a5,a5,1292 # 20011750 <metal_segment_data_source_start>
+2001024c:	c422                	sw	s0,8(sp)
+2001024e:	00001417          	auipc	s0,0x1
+20010252:	50240413          	addi	s0,s0,1282 # 20011750 <metal_segment_data_source_start>
+20010256:	8c1d                	sub	s0,s0,a5
+20010258:	c226                	sw	s1,4(sp)
+2001025a:	c606                	sw	ra,12(sp)
+2001025c:	8409                	srai	s0,s0,0x2
+2001025e:	84be                	mv	s1,a5
+20010260:	e411                	bnez	s0,2001026c <__libc_fini_array+0x2a>
+20010262:	40b2                	lw	ra,12(sp)
+20010264:	4422                	lw	s0,8(sp)
+20010266:	4492                	lw	s1,4(sp)
+20010268:	0141                	addi	sp,sp,16
+2001026a:	8082                	ret
+2001026c:	147d                	addi	s0,s0,-1
+2001026e:	00241793          	slli	a5,s0,0x2
+20010272:	97a6                	add	a5,a5,s1
+20010274:	439c                	lw	a5,0(a5)
+20010276:	9782                	jalr	a5
+20010278:	b7e5                	j	20010260 <__libc_fini_array+0x1e>
+
+2001027a <__libc_init_array>:
+__libc_init_array():
+2001027a:	1141                	addi	sp,sp,-16
+2001027c:	00001797          	auipc	a5,0x1
+20010280:	4cc78793          	addi	a5,a5,1228 # 20011748 <__init_array_start>
+20010284:	c422                	sw	s0,8(sp)
+20010286:	00001417          	auipc	s0,0x1
+2001028a:	4c240413          	addi	s0,s0,1218 # 20011748 <__init_array_start>
+2001028e:	8c1d                	sub	s0,s0,a5
+20010290:	c226                	sw	s1,4(sp)
+20010292:	c04a                	sw	s2,0(sp)
+20010294:	c606                	sw	ra,12(sp)
+20010296:	8409                	srai	s0,s0,0x2
+20010298:	4481                	li	s1,0
+2001029a:	893e                	mv	s2,a5
+2001029c:	02849663          	bne	s1,s0,200102c8 <__libc_init_array+0x4e>
+200102a0:	00001797          	auipc	a5,0x1
+200102a4:	4a878793          	addi	a5,a5,1192 # 20011748 <__init_array_start>
+200102a8:	00001417          	auipc	s0,0x1
+200102ac:	4a840413          	addi	s0,s0,1192 # 20011750 <metal_segment_data_source_start>
+200102b0:	8c1d                	sub	s0,s0,a5
+200102b2:	8409                	srai	s0,s0,0x2
+200102b4:	4481                	li	s1,0
+200102b6:	893e                	mv	s2,a5
+200102b8:	00849f63          	bne	s1,s0,200102d6 <__libc_init_array+0x5c>
+200102bc:	40b2                	lw	ra,12(sp)
+200102be:	4422                	lw	s0,8(sp)
+200102c0:	4492                	lw	s1,4(sp)
+200102c2:	4902                	lw	s2,0(sp)
+200102c4:	0141                	addi	sp,sp,16
+200102c6:	8082                	ret
+200102c8:	00249793          	slli	a5,s1,0x2
+200102cc:	97ca                	add	a5,a5,s2
+200102ce:	439c                	lw	a5,0(a5)
+200102d0:	0485                	addi	s1,s1,1
+200102d2:	9782                	jalr	a5
+200102d4:	b7e1                	j	2001029c <__libc_init_array+0x22>
+200102d6:	00249793          	slli	a5,s1,0x2
+200102da:	97ca                	add	a5,a5,s2
+200102dc:	439c                	lw	a5,0(a5)
+200102de:	0485                	addi	s1,s1,1
+200102e0:	9782                	jalr	a5
+200102e2:	bfd9                	j	200102b8 <__libc_init_array+0x3e>
+
+200102e4 <__register_exitproc>:
+__register_exitproc():
+200102e4:	82818793          	addi	a5,gp,-2008 # 800000e0 <metal_segment_data_target_end>
+200102e8:	439c                	lw	a5,0(a5)
+200102ea:	8e2a                	mv	t3,a0
+200102ec:	ef99                	bnez	a5,2001030a <__register_exitproc+0x26>
+200102ee:	82c18713          	addi	a4,gp,-2004 # 800000e4 <_global_atexit0>
+200102f2:	82e1a423          	sw	a4,-2008(gp) # 800000e0 <metal_segment_data_target_end>
+200102f6:	dfff0517          	auipc	a0,0xdfff0
+200102fa:	d0a50513          	addi	a0,a0,-758 # 0 <__metal_boot_hart>
+200102fe:	87ba                	mv	a5,a4
+20010300:	c509                	beqz	a0,2001030a <__register_exitproc+0x26>
+20010302:	411c                	lw	a5,0(a0)
+20010304:	8af1aa23          	sw	a5,-1868(gp) # 8000016c <_global_atexit0+0x88>
+20010308:	87ba                	mv	a5,a4
+2001030a:	43d8                	lw	a4,4(a5)
+2001030c:	487d                	li	a6,31
+2001030e:	557d                	li	a0,-1
+20010310:	04e84763          	blt	a6,a4,2001035e <__register_exitproc+0x7a>
+20010314:	020e0e63          	beqz	t3,20010350 <__register_exitproc+0x6c>
+20010318:	0887a803          	lw	a6,136(a5)
+2001031c:	04080163          	beqz	a6,2001035e <__register_exitproc+0x7a>
+20010320:	00271893          	slli	a7,a4,0x2
+20010324:	98c2                	add	a7,a7,a6
+20010326:	00c8a023          	sw	a2,0(a7)
+2001032a:	10082303          	lw	t1,256(a6)
+2001032e:	4605                	li	a2,1
+20010330:	00e61633          	sll	a2,a2,a4
+20010334:	00c36333          	or	t1,t1,a2
+20010338:	10682023          	sw	t1,256(a6)
+2001033c:	08d8a023          	sw	a3,128(a7)
+20010340:	4689                	li	a3,2
+20010342:	00de1763          	bne	t3,a3,20010350 <__register_exitproc+0x6c>
+20010346:	10482683          	lw	a3,260(a6)
+2001034a:	8e55                	or	a2,a2,a3
+2001034c:	10c82223          	sw	a2,260(a6)
+20010350:	00170693          	addi	a3,a4,1 # 2001 <__heap_size+0x1801>
+20010354:	070a                	slli	a4,a4,0x2
+20010356:	c3d4                	sw	a3,4(a5)
+20010358:	97ba                	add	a5,a5,a4
+2001035a:	c78c                	sw	a1,8(a5)
+2001035c:	4501                	li	a0,0
+2001035e:	8082                	ret
+
+20010360 <__call_exitprocs>:
+__call_exitprocs():
+20010360:	7179                	addi	sp,sp,-48
+20010362:	cc52                	sw	s4,24(sp)
+20010364:	ca56                	sw	s5,20(sp)
+20010366:	c85a                	sw	s6,16(sp)
+20010368:	c65e                	sw	s7,12(sp)
+2001036a:	d606                	sw	ra,44(sp)
+2001036c:	d422                	sw	s0,40(sp)
+2001036e:	d226                	sw	s1,36(sp)
+20010370:	d04a                	sw	s2,32(sp)
+20010372:	ce4e                	sw	s3,28(sp)
+20010374:	c462                	sw	s8,8(sp)
+20010376:	8b2a                	mv	s6,a0
+20010378:	8a2e                	mv	s4,a1
+2001037a:	82818a93          	addi	s5,gp,-2008 # 800000e0 <metal_segment_data_target_end>
+2001037e:	4b85                	li	s7,1
+20010380:	000aa403          	lw	s0,0(s5)
+20010384:	c811                	beqz	s0,20010398 <__call_exitprocs+0x38>
+20010386:	4044                	lw	s1,4(s0)
+20010388:	08842983          	lw	s3,136(s0)
+2001038c:	fff48913          	addi	s2,s1,-1
+20010390:	048a                	slli	s1,s1,0x2
+20010392:	94a2                	add	s1,s1,s0
+20010394:	00095e63          	bgez	s2,200103b0 <__call_exitprocs+0x50>
+20010398:	50b2                	lw	ra,44(sp)
+2001039a:	5422                	lw	s0,40(sp)
+2001039c:	5492                	lw	s1,36(sp)
+2001039e:	5902                	lw	s2,32(sp)
+200103a0:	49f2                	lw	s3,28(sp)
+200103a2:	4a62                	lw	s4,24(sp)
+200103a4:	4ad2                	lw	s5,20(sp)
+200103a6:	4b42                	lw	s6,16(sp)
+200103a8:	4bb2                	lw	s7,12(sp)
+200103aa:	4c22                	lw	s8,8(sp)
+200103ac:	6145                	addi	sp,sp,48
+200103ae:	8082                	ret
+200103b0:	000a0e63          	beqz	s4,200103cc <__call_exitprocs+0x6c>
+200103b4:	00099563          	bnez	s3,200103be <__call_exitprocs+0x5e>
+200103b8:	197d                	addi	s2,s2,-1
+200103ba:	14f1                	addi	s1,s1,-4
+200103bc:	bfe1                	j	20010394 <__call_exitprocs+0x34>
+200103be:	00291793          	slli	a5,s2,0x2
+200103c2:	97ce                	add	a5,a5,s3
+200103c4:	0807a783          	lw	a5,128(a5)
+200103c8:	ff4798e3          	bne	a5,s4,200103b8 <__call_exitprocs+0x58>
+200103cc:	4058                	lw	a4,4(s0)
+200103ce:	40dc                	lw	a5,4(s1)
+200103d0:	177d                	addi	a4,a4,-1
+200103d2:	03271863          	bne	a4,s2,20010402 <__call_exitprocs+0xa2>
+200103d6:	01242223          	sw	s2,4(s0)
+200103da:	dff9                	beqz	a5,200103b8 <__call_exitprocs+0x58>
+200103dc:	00442c03          	lw	s8,4(s0)
+200103e0:	00098863          	beqz	s3,200103f0 <__call_exitprocs+0x90>
+200103e4:	1009a683          	lw	a3,256(s3)
+200103e8:	012b9733          	sll	a4,s7,s2
+200103ec:	8ef9                	and	a3,a3,a4
+200103ee:	ee89                	bnez	a3,20010408 <__call_exitprocs+0xa8>
+200103f0:	9782                	jalr	a5
+200103f2:	4058                	lw	a4,4(s0)
+200103f4:	000aa783          	lw	a5,0(s5)
+200103f8:	f98714e3          	bne	a4,s8,20010380 <__call_exitprocs+0x20>
+200103fc:	faf40ee3          	beq	s0,a5,200103b8 <__call_exitprocs+0x58>
+20010400:	b741                	j	20010380 <__call_exitprocs+0x20>
+20010402:	0004a223          	sw	zero,4(s1)
+20010406:	bfd1                	j	200103da <__call_exitprocs+0x7a>
+20010408:	00291693          	slli	a3,s2,0x2
+2001040c:	96ce                	add	a3,a3,s3
+2001040e:	428c                	lw	a1,0(a3)
+20010410:	1049a683          	lw	a3,260(s3)
+20010414:	8f75                	and	a4,a4,a3
+20010416:	e701                	bnez	a4,2001041e <__call_exitprocs+0xbe>
+20010418:	855a                	mv	a0,s6
+2001041a:	9782                	jalr	a5
+2001041c:	bfd9                	j	200103f2 <__call_exitprocs+0x92>
+2001041e:	852e                	mv	a0,a1
+20010420:	9782                	jalr	a5
+20010422:	bfc1                	j	200103f2 <__call_exitprocs+0x92>
+
+20010424 <__metal_driver_sifive_fe310_g000_hfrosc_ref>:
+__metal_driver_sifive_fe310_g000_hfrosc_ref():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:911
+
+
+
+/* --------------------- sifive_fe310_g000_hfrosc ------------ */
+static __inline__ struct metal_clock * __metal_driver_sifive_fe310_g000_hfrosc_ref(const struct metal_clock *clock)
+{
+20010424:	1101                	addi	sp,sp,-32
+20010426:	ce22                	sw	s0,28(sp)
+20010428:	1000                	addi	s0,sp,32
+2001042a:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:912
+		return (struct metal_clock *)&__metal_dt_clock_2.clock;
+2001042e:	800007b7          	lui	a5,0x80000
+20010432:	06c78793          	addi	a5,a5,108 # 8000006c <__global_pointer$+0xfffff7b4>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:913
+}
+20010436:	853e                	mv	a0,a5
+20010438:	4472                	lw	s0,28(sp)
+2001043a:	6105                	addi	sp,sp,32
+2001043c:	8082                	ret
+
+2001043e <__metal_driver_sifive_fe310_g000_hfrosc_config_base>:
+__metal_driver_sifive_fe310_g000_hfrosc_config_base():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:916
+
+static __inline__ struct __metal_driver_sifive_fe310_g000_prci * __metal_driver_sifive_fe310_g000_hfrosc_config_base(const struct metal_clock *clock)
+{
+2001043e:	1101                	addi	sp,sp,-32
+20010440:	ce22                	sw	s0,28(sp)
+20010442:	1000                	addi	s0,sp,32
+20010444:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:917
+		return (struct __metal_driver_sifive_fe310_g000_prci *)&__metal_dt_prci_10008000;
+20010448:	800007b7          	lui	a5,0x80000
+2001044c:	0bc78793          	addi	a5,a5,188 # 800000bc <__global_pointer$+0xfffff804>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:918
+}
+20010450:	853e                	mv	a0,a5
+20010452:	4472                	lw	s0,28(sp)
+20010454:	6105                	addi	sp,sp,32
+20010456:	8082                	ret
+
+20010458 <__metal_driver_sifive_fe310_g000_hfrosc_config_offset>:
+__metal_driver_sifive_fe310_g000_hfrosc_config_offset():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:926
+{
+		return &__metal_driver_vtable_sifive_fe310_g000_prci;
+}
+
+static __inline__ long __metal_driver_sifive_fe310_g000_hfrosc_config_offset(const struct metal_clock *clock)
+{
+20010458:	1101                	addi	sp,sp,-32
+2001045a:	ce22                	sw	s0,28(sp)
+2001045c:	1000                	addi	s0,sp,32
+2001045e:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:927
+		return METAL_SIFIVE_FE310_G000_PRCI_HFROSCCFG;
+20010462:	4781                	li	a5,0
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:928
+}
+20010464:	853e                	mv	a0,a5
+20010466:	4472                	lw	s0,28(sp)
+20010468:	6105                	addi	sp,sp,32
+2001046a:	8082                	ret
+
+2001046c <__metal_driver_sifive_fe310_g000_prci_vtable>:
+__metal_driver_sifive_fe310_g000_prci_vtable():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1043
+{
+		return METAL_SIFIVE_FE310_G000_PRCI_10008000_SIZE;
+}
+
+static __inline__ const struct __metal_driver_vtable_sifive_fe310_g000_prci * __metal_driver_sifive_fe310_g000_prci_vtable( )
+{
+2001046c:	1141                	addi	sp,sp,-16
+2001046e:	c622                	sw	s0,12(sp)
+20010470:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1044
+		return &__metal_driver_vtable_sifive_fe310_g000_prci;
+20010472:	81818793          	addi	a5,gp,-2024 # 800000d0 <__metal_driver_vtable_sifive_fe310_g000_prci>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1045
+}
+20010476:	853e                	mv	a0,a5
+20010478:	4432                	lw	s0,12(sp)
+2001047a:	0141                	addi	sp,sp,16
+2001047c:	8082                	ret
+
+2001047e <__metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz>:
+__metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:17
+#define CONFIG_TRIM    0x001F0000UL
+#define CONFIG_ENABLE  0x40000000UL
+#define CONFIG_READY   0x80000000UL
+
+long __metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz(const struct metal_clock *clock)
+{
+2001047e:	7139                	addi	sp,sp,-64
+20010480:	de06                	sw	ra,60(sp)
+20010482:	dc22                	sw	s0,56(sp)
+20010484:	0080                	addi	s0,sp,64
+20010486:	fca42623          	sw	a0,-52(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:18
+    struct metal_clock *ref = __metal_driver_sifive_fe310_g000_hfrosc_ref(clock);
+2001048a:	fcc42503          	lw	a0,-52(s0)
+2001048e:	3f59                	jal	20010424 <__metal_driver_sifive_fe310_g000_hfrosc_ref>
+20010490:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:19
+    long config_offset = __metal_driver_sifive_fe310_g000_hfrosc_config_offset(clock);
+20010494:	fcc42503          	lw	a0,-52(s0)
+20010498:	37c1                	jal	20010458 <__metal_driver_sifive_fe310_g000_hfrosc_config_offset>
+2001049a:	fea42423          	sw	a0,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:21
+    struct __metal_driver_sifive_fe310_g000_prci *config_base =
+      __metal_driver_sifive_fe310_g000_hfrosc_config_base(clock);
+2001049e:	fcc42503          	lw	a0,-52(s0)
+200104a2:	3f71                	jal	2001043e <__metal_driver_sifive_fe310_g000_hfrosc_config_base>
+200104a4:	fea42223          	sw	a0,-28(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:23
+    const struct __metal_driver_vtable_sifive_fe310_g000_prci *vtable =
+      __metal_driver_sifive_fe310_g000_prci_vtable();
+200104a8:	37d1                	jal	2001046c <__metal_driver_sifive_fe310_g000_prci_vtable>
+200104aa:	fea42023          	sw	a0,-32(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:24
+    long cfg = vtable->get_reg(config_base, config_offset);
+200104ae:	fe042783          	lw	a5,-32(s0)
+200104b2:	439c                	lw	a5,0(a5)
+200104b4:	fe842583          	lw	a1,-24(s0)
+200104b8:	fe442503          	lw	a0,-28(s0)
+200104bc:	9782                	jalr	a5
+200104be:	fca42e23          	sw	a0,-36(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:26
+
+    if ((cfg & CONFIG_ENABLE) == 0)
+200104c2:	fdc42703          	lw	a4,-36(s0)
+200104c6:	400007b7          	lui	a5,0x40000
+200104ca:	8ff9                	and	a5,a5,a4
+200104cc:	e399                	bnez	a5,200104d2 <__metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz+0x54>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:27
+        return -1;
+200104ce:	57fd                	li	a5,-1
+200104d0:	a025                	j	200104f8 <__metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz+0x7a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:28
+    if ((cfg & CONFIG_READY) == 0)
+200104d2:	fdc42783          	lw	a5,-36(s0)
+200104d6:	0007c463          	bltz	a5,200104de <__metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz+0x60>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:29
+        return -1;
+200104da:	57fd                	li	a5,-1
+200104dc:	a831                	j	200104f8 <__metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz+0x7a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:30
+    return metal_clock_get_rate_hz(ref) / ((cfg & CONFIG_DIVIDER) + 1);
+200104de:	fec42503          	lw	a0,-20(s0)
+200104e2:	085000ef          	jal	ra,20010d66 <metal_clock_get_rate_hz>
+200104e6:	87aa                	mv	a5,a0
+200104e8:	873e                	mv	a4,a5
+200104ea:	fdc42783          	lw	a5,-36(s0)
+200104ee:	03f7f793          	andi	a5,a5,63
+200104f2:	0785                	addi	a5,a5,1
+200104f4:	02f757b3          	divu	a5,a4,a5
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:31
+}
+200104f8:	853e                	mv	a0,a5
+200104fa:	50f2                	lw	ra,60(sp)
+200104fc:	5462                	lw	s0,56(sp)
+200104fe:	6121                	addi	sp,sp,64
+20010500:	8082                	ret
+
+20010502 <__metal_driver_sifive_fe310_g000_hfrosc_set_rate_hz>:
+__metal_driver_sifive_fe310_g000_hfrosc_set_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:34
+
+long __metal_driver_sifive_fe310_g000_hfrosc_set_rate_hz(struct metal_clock *clock, long rate)
+{
+20010502:	1101                	addi	sp,sp,-32
+20010504:	ce06                	sw	ra,28(sp)
+20010506:	cc22                	sw	s0,24(sp)
+20010508:	1000                	addi	s0,sp,32
+2001050a:	fea42623          	sw	a0,-20(s0)
+2001050e:	feb42423          	sw	a1,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:35
+    return __metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz(clock);
+20010512:	fec42503          	lw	a0,-20(s0)
+20010516:	37a5                	jal	2001047e <__metal_driver_sifive_fe310_g000_hfrosc_get_rate_hz>
+20010518:	87aa                	mv	a5,a0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfrosc.c:36
+}
+2001051a:	853e                	mv	a0,a5
+2001051c:	40f2                	lw	ra,28(sp)
+2001051e:	4462                	lw	s0,24(sp)
+20010520:	6105                	addi	sp,sp,32
+20010522:	8082                	ret
+
+20010524 <__metal_driver_sifive_fe310_g000_hfxosc_ref>:
+__metal_driver_sifive_fe310_g000_hfxosc_ref():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:934
+{
+20010524:	1101                	addi	sp,sp,-32
+20010526:	ce22                	sw	s0,28(sp)
+20010528:	1000                	addi	s0,sp,32
+2001052a:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:935
+		return (struct metal_clock *)&__metal_dt_clock_0.clock;
+2001052e:	800007b7          	lui	a5,0x80000
+20010532:	06078793          	addi	a5,a5,96 # 80000060 <__global_pointer$+0xfffff7a8>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:936
+}
+20010536:	853e                	mv	a0,a5
+20010538:	4472                	lw	s0,28(sp)
+2001053a:	6105                	addi	sp,sp,32
+2001053c:	8082                	ret
+
+2001053e <__metal_driver_sifive_fe310_g000_hfxosc_config_base>:
+__metal_driver_sifive_fe310_g000_hfxosc_config_base():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:939
+{
+2001053e:	1101                	addi	sp,sp,-32
+20010540:	ce22                	sw	s0,28(sp)
+20010542:	1000                	addi	s0,sp,32
+20010544:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:940
+		return (struct __metal_driver_sifive_fe310_g000_prci *)&__metal_dt_prci_10008000;
+20010548:	800007b7          	lui	a5,0x80000
+2001054c:	0bc78793          	addi	a5,a5,188 # 800000bc <__global_pointer$+0xfffff804>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:941
+}
+20010550:	853e                	mv	a0,a5
+20010552:	4472                	lw	s0,28(sp)
+20010554:	6105                	addi	sp,sp,32
+20010556:	8082                	ret
+
+20010558 <__metal_driver_sifive_fe310_g000_hfxosc_config_offset>:
+__metal_driver_sifive_fe310_g000_hfxosc_config_offset():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:944
+{
+20010558:	1101                	addi	sp,sp,-32
+2001055a:	ce22                	sw	s0,28(sp)
+2001055c:	1000                	addi	s0,sp,32
+2001055e:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:945
+		return METAL_SIFIVE_FE310_G000_PRCI_HFXOSCCFG;
+20010562:	4791                	li	a5,4
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:946
+}
+20010564:	853e                	mv	a0,a5
+20010566:	4472                	lw	s0,28(sp)
+20010568:	6105                	addi	sp,sp,32
+2001056a:	8082                	ret
+
+2001056c <__metal_driver_sifive_fe310_g000_prci_vtable>:
+__metal_driver_sifive_fe310_g000_prci_vtable():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1043
+{
+2001056c:	1141                	addi	sp,sp,-16
+2001056e:	c622                	sw	s0,12(sp)
+20010570:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1044
+		return &__metal_driver_vtable_sifive_fe310_g000_prci;
+20010572:	81818793          	addi	a5,gp,-2024 # 800000d0 <__metal_driver_vtable_sifive_fe310_g000_prci>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1045
+}
+20010576:	853e                	mv	a0,a5
+20010578:	4432                	lw	s0,12(sp)
+2001057a:	0141                	addi	sp,sp,16
+2001057c:	8082                	ret
+
+2001057e <__metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz>:
+__metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:15
+
+#define CONFIG_ENABLE  0x40000000UL
+#define CONFIG_READY   0x80000000UL
+
+long __metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz(const struct metal_clock *clock)
+{
+2001057e:	7139                	addi	sp,sp,-64
+20010580:	de06                	sw	ra,60(sp)
+20010582:	dc22                	sw	s0,56(sp)
+20010584:	0080                	addi	s0,sp,64
+20010586:	fca42623          	sw	a0,-52(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:16
+    struct metal_clock *ref = __metal_driver_sifive_fe310_g000_hfxosc_ref(clock);
+2001058a:	fcc42503          	lw	a0,-52(s0)
+2001058e:	3f59                	jal	20010524 <__metal_driver_sifive_fe310_g000_hfxosc_ref>
+20010590:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:17
+    long config_offset = __metal_driver_sifive_fe310_g000_hfxosc_config_offset(clock);
+20010594:	fcc42503          	lw	a0,-52(s0)
+20010598:	37c1                	jal	20010558 <__metal_driver_sifive_fe310_g000_hfxosc_config_offset>
+2001059a:	fea42423          	sw	a0,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:19
+    struct __metal_driver_sifive_fe310_g000_prci *config_base =
+      __metal_driver_sifive_fe310_g000_hfxosc_config_base(clock);
+2001059e:	fcc42503          	lw	a0,-52(s0)
+200105a2:	3f71                	jal	2001053e <__metal_driver_sifive_fe310_g000_hfxosc_config_base>
+200105a4:	fea42223          	sw	a0,-28(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:21
+    const struct __metal_driver_vtable_sifive_fe310_g000_prci *vtable =
+      __metal_driver_sifive_fe310_g000_prci_vtable();
+200105a8:	37d1                	jal	2001056c <__metal_driver_sifive_fe310_g000_prci_vtable>
+200105aa:	fea42023          	sw	a0,-32(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:22
+    long cfg = vtable->get_reg(config_base, config_offset);
+200105ae:	fe042783          	lw	a5,-32(s0)
+200105b2:	439c                	lw	a5,0(a5)
+200105b4:	fe842583          	lw	a1,-24(s0)
+200105b8:	fe442503          	lw	a0,-28(s0)
+200105bc:	9782                	jalr	a5
+200105be:	fca42e23          	sw	a0,-36(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:24
+
+    if ((cfg & CONFIG_ENABLE) == 0)
+200105c2:	fdc42703          	lw	a4,-36(s0)
+200105c6:	400007b7          	lui	a5,0x40000
+200105ca:	8ff9                	and	a5,a5,a4
+200105cc:	e399                	bnez	a5,200105d2 <__metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz+0x54>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:25
+        return -1;
+200105ce:	57fd                	li	a5,-1
+200105d0:	a821                	j	200105e8 <__metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz+0x6a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:26
+    if ((cfg & CONFIG_READY) == 0)
+200105d2:	fdc42783          	lw	a5,-36(s0)
+200105d6:	0007c463          	bltz	a5,200105de <__metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz+0x60>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:27
+        return -1;
+200105da:	57fd                	li	a5,-1
+200105dc:	a031                	j	200105e8 <__metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz+0x6a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:28
+    return metal_clock_get_rate_hz(ref);
+200105de:	fec42503          	lw	a0,-20(s0)
+200105e2:	784000ef          	jal	ra,20010d66 <metal_clock_get_rate_hz>
+200105e6:	87aa                	mv	a5,a0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:29
+}
+200105e8:	853e                	mv	a0,a5
+200105ea:	50f2                	lw	ra,60(sp)
+200105ec:	5462                	lw	s0,56(sp)
+200105ee:	6121                	addi	sp,sp,64
+200105f0:	8082                	ret
+
+200105f2 <__metal_driver_sifive_fe310_g000_hfxosc_set_rate_hz>:
+__metal_driver_sifive_fe310_g000_hfxosc_set_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:32
+
+long __metal_driver_sifive_fe310_g000_hfxosc_set_rate_hz(struct metal_clock *clock, long rate)
+{
+200105f2:	1101                	addi	sp,sp,-32
+200105f4:	ce06                	sw	ra,28(sp)
+200105f6:	cc22                	sw	s0,24(sp)
+200105f8:	1000                	addi	s0,sp,32
+200105fa:	fea42623          	sw	a0,-20(s0)
+200105fe:	feb42423          	sw	a1,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:33
+    return __metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz(clock);
+20010602:	fec42503          	lw	a0,-20(s0)
+20010606:	3fa5                	jal	2001057e <__metal_driver_sifive_fe310_g000_hfxosc_get_rate_hz>
+20010608:	87aa                	mv	a5,a0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_hfxosc.c:34
+}
+2001060a:	853e                	mv	a0,a5
+2001060c:	40f2                	lw	ra,28(sp)
+2001060e:	4462                	lw	s0,24(sp)
+20010610:	6105                	addi	sp,sp,32
+20010612:	8082                	ret
+
+20010614 <__metal_driver_sifive_fe310_g000_pll_pllsel0>:
+__metal_driver_sifive_fe310_g000_pll_pllsel0():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:995
+{
+20010614:	1101                	addi	sp,sp,-32
+20010616:	ce22                	sw	s0,28(sp)
+20010618:	1000                	addi	s0,sp,32
+2001061a:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:996
+		return (struct metal_clock *)&__metal_dt_clock_3.clock;
+2001061e:	800007b7          	lui	a5,0x80000
+20010622:	09078793          	addi	a5,a5,144 # 80000090 <__global_pointer$+0xfffff7d8>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:997
+}
+20010626:	853e                	mv	a0,a5
+20010628:	4472                	lw	s0,28(sp)
+2001062a:	6105                	addi	sp,sp,32
+2001062c:	8082                	ret
+
+2001062e <__metal_driver_sifive_fe310_g000_pll_pllref>:
+__metal_driver_sifive_fe310_g000_pll_pllref():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1000
+{
+2001062e:	1101                	addi	sp,sp,-32
+20010630:	ce22                	sw	s0,28(sp)
+20010632:	1000                	addi	s0,sp,32
+20010634:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1001
+		return (struct metal_clock *)&__metal_dt_clock_1.clock;
+20010638:	800007b7          	lui	a5,0x80000
+2001063c:	09c78793          	addi	a5,a5,156 # 8000009c <__global_pointer$+0xfffff7e4>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1002
+}
+20010640:	853e                	mv	a0,a5
+20010642:	4472                	lw	s0,28(sp)
+20010644:	6105                	addi	sp,sp,32
+20010646:	8082                	ret
+
+20010648 <__metal_driver_sifive_fe310_g000_pll_divider_base>:
+__metal_driver_sifive_fe310_g000_pll_divider_base():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1005
+{
+20010648:	1101                	addi	sp,sp,-32
+2001064a:	ce22                	sw	s0,28(sp)
+2001064c:	1000                	addi	s0,sp,32
+2001064e:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1006
+		return (struct __metal_driver_sifive_fe310_g000_prci *)&__metal_dt_prci_10008000;
+20010652:	800007b7          	lui	a5,0x80000
+20010656:	0bc78793          	addi	a5,a5,188 # 800000bc <__global_pointer$+0xfffff804>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1007
+}
+2001065a:	853e                	mv	a0,a5
+2001065c:	4472                	lw	s0,28(sp)
+2001065e:	6105                	addi	sp,sp,32
+20010660:	8082                	ret
+
+20010662 <__metal_driver_sifive_fe310_g000_pll_divider_offset>:
+__metal_driver_sifive_fe310_g000_pll_divider_offset():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1010
+{
+20010662:	1101                	addi	sp,sp,-32
+20010664:	ce22                	sw	s0,28(sp)
+20010666:	1000                	addi	s0,sp,32
+20010668:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1011
+		return METAL_SIFIVE_FE310_G000_PRCI_PLLOUTDIV;
+2001066c:	47b1                	li	a5,12
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1012
+}
+2001066e:	853e                	mv	a0,a5
+20010670:	4472                	lw	s0,28(sp)
+20010672:	6105                	addi	sp,sp,32
+20010674:	8082                	ret
+
+20010676 <__metal_driver_sifive_fe310_g000_pll_config_base>:
+__metal_driver_sifive_fe310_g000_pll_config_base():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1015
+{
+20010676:	1141                	addi	sp,sp,-16
+20010678:	c622                	sw	s0,12(sp)
+2001067a:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1016
+		return (struct __metal_driver_sifive_fe310_g000_prci *)&__metal_dt_prci_10008000;
+2001067c:	800007b7          	lui	a5,0x80000
+20010680:	0bc78793          	addi	a5,a5,188 # 800000bc <__global_pointer$+0xfffff804>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1017
+}
+20010684:	853e                	mv	a0,a5
+20010686:	4432                	lw	s0,12(sp)
+20010688:	0141                	addi	sp,sp,16
+2001068a:	8082                	ret
+
+2001068c <__metal_driver_sifive_fe310_g000_pll_config_offset>:
+__metal_driver_sifive_fe310_g000_pll_config_offset():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1020
+{
+2001068c:	1141                	addi	sp,sp,-16
+2001068e:	c622                	sw	s0,12(sp)
+20010690:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1021
+		return METAL_SIFIVE_FE310_G000_PRCI_PLLCFG;
+20010692:	47a1                	li	a5,8
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1022
+}
+20010694:	853e                	mv	a0,a5
+20010696:	4432                	lw	s0,12(sp)
+20010698:	0141                	addi	sp,sp,16
+2001069a:	8082                	ret
+
+2001069c <__metal_driver_sifive_fe310_g000_pll_init_rate>:
+__metal_driver_sifive_fe310_g000_pll_init_rate():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1025
+{
+2001069c:	1141                	addi	sp,sp,-16
+2001069e:	c622                	sw	s0,12(sp)
+200106a0:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1026
+		return 16000000;
+200106a2:	00f427b7          	lui	a5,0xf42
+200106a6:	40078793          	addi	a5,a5,1024 # f42400 <__heap_size+0xf41c00>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1027
+}
+200106aa:	853e                	mv	a0,a5
+200106ac:	4432                	lw	s0,12(sp)
+200106ae:	0141                	addi	sp,sp,16
+200106b0:	8082                	ret
+
+200106b2 <__metal_driver_sifive_fe310_g000_prci_base>:
+__metal_driver_sifive_fe310_g000_prci_base():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1033
+{
+200106b2:	1141                	addi	sp,sp,-16
+200106b4:	c622                	sw	s0,12(sp)
+200106b6:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1034
+		return METAL_SIFIVE_FE310_G000_PRCI_10008000_BASE_ADDRESS;
+200106b8:	100087b7          	lui	a5,0x10008
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1035
+}
+200106bc:	853e                	mv	a0,a5
+200106be:	4432                	lw	s0,12(sp)
+200106c0:	0141                	addi	sp,sp,16
+200106c2:	8082                	ret
+
+200106c4 <__metal_driver_sifive_fe310_g000_prci_vtable>:
+__metal_driver_sifive_fe310_g000_prci_vtable():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1043
+{
+200106c4:	1141                	addi	sp,sp,-16
+200106c6:	c622                	sw	s0,12(sp)
+200106c8:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1044
+		return &__metal_driver_vtable_sifive_fe310_g000_prci;
+200106ca:	81818793          	addi	a5,gp,-2024 # 800000d0 <__metal_driver_vtable_sifive_fe310_g000_prci>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1045
+}
+200106ce:	853e                	mv	a0,a5
+200106d0:	4432                	lw	s0,12(sp)
+200106d2:	0141                	addi	sp,sp,16
+200106d4:	8082                	ret
+
+200106d6 <get_pll_config_freq>:
+get_pll_config_freq():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:137
+ *  - config the PLL configuration
+ * Returns:
+ *  - PLL_CONFIG_NOT_VALID if the configuration is not valid for the input frequency
+ *  - the output frequency, in hertz */
+static long get_pll_config_freq(unsigned long pll_input_rate, const struct pll_config_t *config)
+{
+200106d6:	1101                	addi	sp,sp,-32
+200106d8:	ce22                	sw	s0,28(sp)
+200106da:	1000                	addi	s0,sp,32
+200106dc:	fea42623          	sw	a0,-20(s0)
+200106e0:	feb42423          	sw	a1,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:138
+    if(pll_input_rate < config->min_input_rate || pll_input_rate > config->max_input_rate)
+200106e4:	fe842783          	lw	a5,-24(s0)
+200106e8:	479c                	lw	a5,8(a5)
+200106ea:	fec42703          	lw	a4,-20(s0)
+200106ee:	00f76963          	bltu	a4,a5,20010700 <get_pll_config_freq+0x2a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:138 (discriminator 1)
+200106f2:	fe842783          	lw	a5,-24(s0)
+200106f6:	47dc                	lw	a5,12(a5)
+200106f8:	fec42703          	lw	a4,-20(s0)
+200106fc:	00e7f463          	bgeu	a5,a4,20010704 <get_pll_config_freq+0x2e>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:139
+        return PLL_CONFIG_NOT_VALID;
+20010700:	57fd                	li	a5,-1
+20010702:	a829                	j	2001071c <get_pll_config_freq+0x46>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:141
+
+    return pll_input_rate * config->multiplier / config->divisor;
+20010704:	fe842783          	lw	a5,-24(s0)
+20010708:	4398                	lw	a4,0(a5)
+2001070a:	fec42783          	lw	a5,-20(s0)
+2001070e:	02f70733          	mul	a4,a4,a5
+20010712:	fe842783          	lw	a5,-24(s0)
+20010716:	43dc                	lw	a5,4(a5)
+20010718:	02f757b3          	divu	a5,a4,a5
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:142
+}
+2001071c:	853e                	mv	a0,a5
+2001071e:	4472                	lw	s0,28(sp)
+20010720:	6105                	addi	sp,sp,32
+20010722:	8082                	ret
+
+20010724 <metal_sifive_fe310_g000_pll_init>:
+metal_sifive_fe310_g000_pll_init():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:147
+
+#ifdef __METAL_DT_SIFIVE_FE310_G000_PLL_HANDLE
+
+static void metal_sifive_fe310_g000_pll_init(void) __attribute__((constructor));
+static void metal_sifive_fe310_g000_pll_init(void) {
+20010724:	1101                	addi	sp,sp,-32
+20010726:	ce06                	sw	ra,28(sp)
+20010728:	cc22                	sw	s0,24(sp)
+2001072a:	1000                	addi	s0,sp,32
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:148
+    long init_rate = __metal_driver_sifive_fe310_g000_pll_init_rate();
+2001072c:	3f85                	jal	2001069c <__metal_driver_sifive_fe310_g000_pll_init_rate>
+2001072e:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:150
+    /* If the PLL init_rate is zero, don't initialize the PLL */
+    if(init_rate != 0)
+20010732:	fec42783          	lw	a5,-20(s0)
+20010736:	c791                	beqz	a5,20010742 <metal_sifive_fe310_g000_pll_init+0x1e>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:151
+        __metal_driver_sifive_fe310_g000_pll_init(__METAL_DT_SIFIVE_FE310_G000_PLL_HANDLE);
+20010738:	800007b7          	lui	a5,0x80000
+2001073c:	0a878513          	addi	a0,a5,168 # 800000a8 <__global_pointer$+0xfffff7f0>
+20010740:	2031                	jal	2001074c <__metal_driver_sifive_fe310_g000_pll_init>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:152
+}
+20010742:	0001                	nop
+20010744:	40f2                	lw	ra,28(sp)
+20010746:	4462                	lw	s0,24(sp)
+20010748:	6105                	addi	sp,sp,32
+2001074a:	8082                	ret
+
+2001074c <__metal_driver_sifive_fe310_g000_pll_init>:
+__metal_driver_sifive_fe310_g000_pll_init():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:156
+
+#endif /* __METAL_DT_SIFIVE_FE310_G000__PLL_HANDLE */
+
+void __metal_driver_sifive_fe310_g000_pll_init(struct __metal_driver_sifive_fe310_g000_pll *pll) {
+2001074c:	7139                	addi	sp,sp,-64
+2001074e:	de06                	sw	ra,60(sp)
+20010750:	dc22                	sw	s0,56(sp)
+20010752:	0080                	addi	s0,sp,64
+20010754:	fca42623          	sw	a0,-52(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:157
+    struct metal_clock *pllref = __metal_driver_sifive_fe310_g000_pll_pllref(&(pll->clock));
+20010758:	fcc42783          	lw	a5,-52(s0)
+2001075c:	853e                	mv	a0,a5
+2001075e:	3dc1                	jal	2001062e <__metal_driver_sifive_fe310_g000_pll_pllref>
+20010760:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:158
+    long init_rate = __metal_driver_sifive_fe310_g000_pll_init_rate();
+20010764:	3f25                	jal	2001069c <__metal_driver_sifive_fe310_g000_pll_init_rate>
+20010766:	fea42423          	sw	a0,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:159
+    long config_offset = __metal_driver_sifive_fe310_g000_pll_config_offset();
+2001076a:	370d                	jal	2001068c <__metal_driver_sifive_fe310_g000_pll_config_offset>
+2001076c:	fea42223          	sw	a0,-28(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:160
+    long base = __metal_driver_sifive_fe310_g000_prci_base();
+20010770:	3789                	jal	200106b2 <__metal_driver_sifive_fe310_g000_prci_base>
+20010772:	fea42023          	sw	a0,-32(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:162
+
+    __metal_io_u32 *pllcfg = (__metal_io_u32 *) (base + config_offset);
+20010776:	fe042703          	lw	a4,-32(s0)
+2001077a:	fe442783          	lw	a5,-28(s0)
+2001077e:	97ba                	add	a5,a5,a4
+20010780:	fcf42e23          	sw	a5,-36(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:165
+
+    /* If the PLL clock has had a _pre_rate_change_callback configured, call it */
+    _metal_clock_call_all_callbacks(pll->clock._pre_rate_change_callback);
+20010784:	fcc42783          	lw	a5,-52(s0)
+20010788:	43dc                	lw	a5,4(a5)
+2001078a:	853e                	mv	a0,a5
+2001078c:	2b69                	jal	20010d26 <_metal_clock_call_all_callbacks>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:168
+
+    /* If we're running off of the PLL, switch off before we start configuring it*/
+    if((__METAL_ACCESS_ONCE(pllcfg) & PLL_SEL) == 0)
+2001078e:	fdc42783          	lw	a5,-36(s0)
+20010792:	4398                	lw	a4,0(a5)
+20010794:	67c1                	lui	a5,0x10
+20010796:	8ff9                	and	a5,a5,a4
+20010798:	eb91                	bnez	a5,200107ac <__metal_driver_sifive_fe310_g000_pll_init+0x60>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:169
+        __METAL_ACCESS_ONCE(pllcfg) &= ~(PLL_SEL);
+2001079a:	fdc42783          	lw	a5,-36(s0)
+2001079e:	4398                	lw	a4,0(a5)
+200107a0:	77c1                	lui	a5,0xffff0
+200107a2:	17fd                	addi	a5,a5,-1
+200107a4:	8f7d                	and	a4,a4,a5
+200107a6:	fdc42783          	lw	a5,-36(s0)
+200107aa:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:172
+
+    /* Make sure we're running off of the external oscillator for stability */
+    if(pllref != NULL)
+200107ac:	fec42783          	lw	a5,-20(s0)
+200107b0:	cb91                	beqz	a5,200107c4 <__metal_driver_sifive_fe310_g000_pll_init+0x78>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:173
+        __METAL_ACCESS_ONCE(pllcfg) |= PLL_REFSEL;
+200107b2:	fdc42783          	lw	a5,-36(s0)
+200107b6:	4398                	lw	a4,0(a5)
+200107b8:	000207b7          	lui	a5,0x20
+200107bc:	8f5d                	or	a4,a4,a5
+200107be:	fdc42783          	lw	a5,-36(s0)
+200107c2:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:178
+
+    /* Configure the PLL to run at the requested init frequency.
+     * Using the vtable instead of the user API because we want to control
+     * when the callbacks occur. */
+    pll->clock.vtable->set_rate_hz(&(pll->clock), init_rate);
+200107c4:	fcc42783          	lw	a5,-52(s0)
+200107c8:	439c                	lw	a5,0(a5)
+200107ca:	43d8                	lw	a4,4(a5)
+200107cc:	fcc42783          	lw	a5,-52(s0)
+200107d0:	fe842583          	lw	a1,-24(s0)
+200107d4:	853e                	mv	a0,a5
+200107d6:	9702                	jalr	a4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:181
+
+    /* If the PLL clock has had a rate_change_callback configured, call it */
+    _metal_clock_call_all_callbacks(pll->clock._post_rate_change_callback);
+200107d8:	fcc42783          	lw	a5,-52(s0)
+200107dc:	479c                	lw	a5,8(a5)
+200107de:	853e                	mv	a0,a5
+200107e0:	2399                	jal	20010d26 <_metal_clock_call_all_callbacks>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:182
+}
+200107e2:	0001                	nop
+200107e4:	50f2                	lw	ra,60(sp)
+200107e6:	5462                	lw	s0,56(sp)
+200107e8:	6121                	addi	sp,sp,64
+200107ea:	8082                	ret
+
+200107ec <__metal_driver_sifive_fe310_g000_pll_get_rate_hz>:
+__metal_driver_sifive_fe310_g000_pll_get_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:185
+
+long __metal_driver_sifive_fe310_g000_pll_get_rate_hz(const struct metal_clock *clock)
+{
+200107ec:	711d                	addi	sp,sp,-96
+200107ee:	ce86                	sw	ra,92(sp)
+200107f0:	cca2                	sw	s0,88(sp)
+200107f2:	1080                	addi	s0,sp,96
+200107f4:	faa42623          	sw	a0,-84(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:186
+    struct metal_clock *pllref = __metal_driver_sifive_fe310_g000_pll_pllref(clock);
+200107f8:	fac42503          	lw	a0,-84(s0)
+200107fc:	3d0d                	jal	2001062e <__metal_driver_sifive_fe310_g000_pll_pllref>
+200107fe:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:187
+    struct metal_clock *pllsel0 = __metal_driver_sifive_fe310_g000_pll_pllsel0(clock);
+20010802:	fac42503          	lw	a0,-84(s0)
+20010806:	3539                	jal	20010614 <__metal_driver_sifive_fe310_g000_pll_pllsel0>
+20010808:	fea42423          	sw	a0,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:188
+    long config_offset = __metal_driver_sifive_fe310_g000_pll_config_offset(clock);
+2001080c:	fac42503          	lw	a0,-84(s0)
+20010810:	3db5                	jal	2001068c <__metal_driver_sifive_fe310_g000_pll_config_offset>
+20010812:	fea42223          	sw	a0,-28(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:190
+    struct __metal_driver_sifive_fe310_g000_prci *config_base =
+      __metal_driver_sifive_fe310_g000_pll_config_base(clock);
+20010816:	fac42503          	lw	a0,-84(s0)
+2001081a:	3db1                	jal	20010676 <__metal_driver_sifive_fe310_g000_pll_config_base>
+2001081c:	fea42023          	sw	a0,-32(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:191
+    long divider_offset = __metal_driver_sifive_fe310_g000_pll_divider_offset(clock);
+20010820:	fac42503          	lw	a0,-84(s0)
+20010824:	3d3d                	jal	20010662 <__metal_driver_sifive_fe310_g000_pll_divider_offset>
+20010826:	fca42e23          	sw	a0,-36(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:193
+    struct __metal_driver_sifive_fe310_g000_prci *divider_base =
+      __metal_driver_sifive_fe310_g000_pll_divider_base(clock);
+2001082a:	fac42503          	lw	a0,-84(s0)
+2001082e:	3d29                	jal	20010648 <__metal_driver_sifive_fe310_g000_pll_divider_base>
+20010830:	fca42c23          	sw	a0,-40(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:195
+    const struct __metal_driver_vtable_sifive_fe310_g000_prci *vtable =
+      __metal_driver_sifive_fe310_g000_prci_vtable();
+20010834:	3d41                	jal	200106c4 <__metal_driver_sifive_fe310_g000_prci_vtable>
+20010836:	fca42a23          	sw	a0,-44(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:197
+
+    long cfg = vtable->get_reg(config_base, config_offset);
+2001083a:	fd442783          	lw	a5,-44(s0)
+2001083e:	439c                	lw	a5,0(a5)
+20010840:	fe442583          	lw	a1,-28(s0)
+20010844:	fe042503          	lw	a0,-32(s0)
+20010848:	9782                	jalr	a5
+2001084a:	fca42823          	sw	a0,-48(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:198
+    long div = vtable->get_reg(divider_base, divider_offset);
+2001084e:	fd442783          	lw	a5,-44(s0)
+20010852:	439c                	lw	a5,0(a5)
+20010854:	fdc42583          	lw	a1,-36(s0)
+20010858:	fd842503          	lw	a0,-40(s0)
+2001085c:	9782                	jalr	a5
+2001085e:	fca42623          	sw	a0,-52(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:202
+
+    /* At the end of the PLL there's one big mux: it either selects the HFROSC
+     * (bypassing the PLL entirely) or uses the PLL. */
+    if (__METAL_GET_FIELD(cfg, PLL_SEL) == 0)
+20010862:	fd042703          	lw	a4,-48(s0)
+20010866:	67c1                	lui	a5,0x10
+20010868:	8f7d                	and	a4,a4,a5
+2001086a:	67c1                	lui	a5,0x10
+2001086c:	00f77763          	bgeu	a4,a5,2001087a <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0x8e>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:203
+        return metal_clock_get_rate_hz(pllsel0);
+20010870:	fe842503          	lw	a0,-24(s0)
+20010874:	29cd                	jal	20010d66 <metal_clock_get_rate_hz>
+20010876:	87aa                	mv	a5,a0
+20010878:	a8d9                	j	2001094e <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0x162>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:207
+
+    /* There's a clock mux before the PLL that selects between the HFROSC adn
+     * the HFXOSC as the PLL's input clock. */
+    long ref_hz = metal_clock_get_rate_hz(__METAL_GET_FIELD(cfg, PLL_REFSEL) ? pllref : pllsel0);
+2001087a:	fd042703          	lw	a4,-48(s0)
+2001087e:	000207b7          	lui	a5,0x20
+20010882:	8f7d                	and	a4,a4,a5
+20010884:	000207b7          	lui	a5,0x20
+20010888:	00f76563          	bltu	a4,a5,20010892 <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0xa6>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:207 (discriminator 1)
+2001088c:	fec42783          	lw	a5,-20(s0)
+20010890:	a019                	j	20010896 <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0xaa>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:207 (discriminator 2)
+20010892:	fe842783          	lw	a5,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:207 (discriminator 4)
+20010896:	853e                	mv	a0,a5
+20010898:	21f9                	jal	20010d66 <metal_clock_get_rate_hz>
+2001089a:	fca42423          	sw	a0,-56(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:211 (discriminator 4)
+
+    /* It's possible to bypass the PLL, which is an internal bpyass.  This
+     * still obays the PLL's input clock mu. */
+    if (__METAL_GET_FIELD(cfg, PLL_BYPASS))
+2001089e:	fd042703          	lw	a4,-48(s0)
+200108a2:	000407b7          	lui	a5,0x40
+200108a6:	8f7d                	and	a4,a4,a5
+200108a8:	000407b7          	lui	a5,0x40
+200108ac:	00f76563          	bltu	a4,a5,200108b6 <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0xca>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:212
+        return ref_hz;
+200108b0:	fc842783          	lw	a5,-56(s0)
+200108b4:	a869                	j	2001094e <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0x162>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:215
+
+    /* Logically the PLL is a three stage div-mul-div. */
+    long div_r = __METAL_GET_FIELD(cfg, PLL_R) + 1;
+200108b6:	fd042783          	lw	a5,-48(s0)
+200108ba:	8b9d                	andi	a5,a5,7
+200108bc:	0785                	addi	a5,a5,1
+200108be:	fcf42223          	sw	a5,-60(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:216
+    long mul_f = 2 * (__METAL_GET_FIELD(cfg, PLL_F) + 1);
+200108c2:	fd042783          	lw	a5,-48(s0)
+200108c6:	3f07f793          	andi	a5,a5,1008
+200108ca:	8391                	srli	a5,a5,0x4
+200108cc:	0785                	addi	a5,a5,1
+200108ce:	0786                	slli	a5,a5,0x1
+200108d0:	fcf42023          	sw	a5,-64(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:217
+    if (__METAL_GET_FIELD(cfg, PLL_Q) == 0)
+200108d4:	fd042703          	lw	a4,-48(s0)
+200108d8:	6785                	lui	a5,0x1
+200108da:	c0078793          	addi	a5,a5,-1024 # c00 <__heap_size+0x400>
+200108de:	8f7d                	and	a4,a4,a5
+200108e0:	3ff00793          	li	a5,1023
+200108e4:	00e7e463          	bltu	a5,a4,200108ec <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0x100>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:218
+        return -1;
+200108e8:	57fd                	li	a5,-1
+200108ea:	a095                	j	2001094e <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0x162>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:219
+    long div_q = 1 << __METAL_GET_FIELD(cfg, PLL_Q);
+200108ec:	fd042703          	lw	a4,-48(s0)
+200108f0:	6785                	lui	a5,0x1
+200108f2:	c0078793          	addi	a5,a5,-1024 # c00 <__heap_size+0x400>
+200108f6:	8ff9                	and	a5,a5,a4
+200108f8:	83a9                	srli	a5,a5,0xa
+200108fa:	4705                	li	a4,1
+200108fc:	00f717b3          	sll	a5,a4,a5
+20010900:	faf42e23          	sw	a5,-68(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:224
+
+    /* In addition to the dividers inherent in the PLL, there's an additional
+     * clock divider that lives after the PLL and lets us pick a more
+     * interesting range of frequencies. */
+    long pllout = (((ref_hz / div_r) * mul_f) / div_q);
+20010904:	fc842703          	lw	a4,-56(s0)
+20010908:	fc442783          	lw	a5,-60(s0)
+2001090c:	02f74733          	div	a4,a4,a5
+20010910:	fc042783          	lw	a5,-64(s0)
+20010914:	02f70733          	mul	a4,a4,a5
+20010918:	fbc42783          	lw	a5,-68(s0)
+2001091c:	02f747b3          	div	a5,a4,a5
+20010920:	faf42c23          	sw	a5,-72(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:225
+    if (__METAL_GET_FIELD(div, DIV_1))
+20010924:	fcc42783          	lw	a5,-52(s0)
+20010928:	1007f713          	andi	a4,a5,256
+2001092c:	0ff00793          	li	a5,255
+20010930:	00e7f563          	bgeu	a5,a4,2001093a <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0x14e>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:226
+        return pllout;
+20010934:	fb842783          	lw	a5,-72(s0)
+20010938:	a819                	j	2001094e <__metal_driver_sifive_fe310_g000_pll_get_rate_hz+0x162>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:228
+
+    return pllout / (2 * (__METAL_GET_FIELD(div, DIV_DIV) + 1));
+2001093a:	fb842703          	lw	a4,-72(s0)
+2001093e:	fcc42783          	lw	a5,-52(s0)
+20010942:	03f7f793          	andi	a5,a5,63
+20010946:	0785                	addi	a5,a5,1
+20010948:	0786                	slli	a5,a5,0x1
+2001094a:	02f757b3          	divu	a5,a4,a5
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:229
+}
+2001094e:	853e                	mv	a0,a5
+20010950:	40f6                	lw	ra,92(sp)
+20010952:	4466                	lw	s0,88(sp)
+20010954:	6125                	addi	sp,sp,96
+20010956:	8082                	ret
+
+20010958 <find_closest_config>:
+find_closest_config():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:240
+ *  - rate desired PLL output frequency
+ * Returns:
+ *  -1 if no valid configuration is available
+ *  the index into pll_configs of a valid configuration */
+static int find_closest_config(long ref_hz, long rate)
+{
+20010958:	7139                	addi	sp,sp,-64
+2001095a:	de06                	sw	ra,60(sp)
+2001095c:	dc22                	sw	s0,56(sp)
+2001095e:	0080                	addi	s0,sp,64
+20010960:	fca42623          	sw	a0,-52(s0)
+20010964:	fcb42423          	sw	a1,-56(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:241
+    int closest_index = -1;
+20010968:	57fd                	li	a5,-1
+2001096a:	fef42623          	sw	a5,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:242
+    long closest_diff = LONG_MAX;
+2001096e:	800007b7          	lui	a5,0x80000
+20010972:	fff7c793          	not	a5,a5
+20010976:	fef42423          	sw	a5,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:246
+
+    /* We're probably trying for a fast output frequency, so start from
+     * the high end of the configs. */
+    for(int i = (sizeof(pll_configs) / sizeof(pll_configs[0])) - 1; i >= 0; i--)
+2001097a:	04300793          	li	a5,67
+2001097e:	fef42223          	sw	a5,-28(s0)
+20010982:	a0ad                	j	200109ec <find_closest_config+0x94>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:248
+    {
+        long config_freq = get_pll_config_freq(ref_hz, &(pll_configs[i]));
+20010984:	fcc42683          	lw	a3,-52(s0)
+20010988:	fe442783          	lw	a5,-28(s0)
+2001098c:	00579713          	slli	a4,a5,0x5
+20010990:	200117b7          	lui	a5,0x20011
+20010994:	eb878793          	addi	a5,a5,-328 # 20010eb8 <pll_configs>
+20010998:	97ba                	add	a5,a5,a4
+2001099a:	85be                	mv	a1,a5
+2001099c:	8536                	mv	a0,a3
+2001099e:	3b25                	jal	200106d6 <get_pll_config_freq>
+200109a0:	fea42023          	sw	a0,-32(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:249
+        if(config_freq != PLL_CONFIG_NOT_VALID)
+200109a4:	fe042703          	lw	a4,-32(s0)
+200109a8:	57fd                	li	a5,-1
+200109aa:	02f70c63          	beq	a4,a5,200109e2 <find_closest_config+0x8a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:251
+        {
+            long freq_diff = abs(config_freq - rate);
+200109ae:	fe042703          	lw	a4,-32(s0)
+200109b2:	fc842783          	lw	a5,-56(s0)
+200109b6:	8f1d                	sub	a4,a4,a5
+200109b8:	41f75793          	srai	a5,a4,0x1f
+200109bc:	8f3d                	xor	a4,a4,a5
+200109be:	40f707b3          	sub	a5,a4,a5
+200109c2:	fcf42e23          	sw	a5,-36(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:252
+            if(freq_diff < closest_diff)
+200109c6:	fdc42703          	lw	a4,-36(s0)
+200109ca:	fe842783          	lw	a5,-24(s0)
+200109ce:	00f75a63          	bge	a4,a5,200109e2 <find_closest_config+0x8a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:254
+            {
+                closest_index = i;
+200109d2:	fe442783          	lw	a5,-28(s0)
+200109d6:	fef42623          	sw	a5,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:255
+                closest_diff = freq_diff;
+200109da:	fdc42783          	lw	a5,-36(s0)
+200109de:	fef42423          	sw	a5,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:246 (discriminator 2)
+    for(int i = (sizeof(pll_configs) / sizeof(pll_configs[0])) - 1; i >= 0; i--)
+200109e2:	fe442783          	lw	a5,-28(s0)
+200109e6:	17fd                	addi	a5,a5,-1
+200109e8:	fef42223          	sw	a5,-28(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:246 (discriminator 1)
+200109ec:	fe442783          	lw	a5,-28(s0)
+200109f0:	f807dae3          	bgez	a5,20010984 <find_closest_config+0x2c>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:260
+            }
+        }
+    }
+
+    return closest_index;
+200109f4:	fec42783          	lw	a5,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:261
+}
+200109f8:	853e                	mv	a0,a5
+200109fa:	50f2                	lw	ra,60(sp)
+200109fc:	5462                	lw	s0,56(sp)
+200109fe:	6121                	addi	sp,sp,64
+20010a00:	8082                	ret
+
+20010a02 <configure_pll>:
+configure_pll():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:265
+
+/* Configure the PLL and wait for it to lock */
+static void configure_pll(__metal_io_u32 *pllcfg, __metal_io_u32 *plloutdiv, const struct pll_config_t *config)
+{
+20010a02:	1101                	addi	sp,sp,-32
+20010a04:	ce22                	sw	s0,28(sp)
+20010a06:	1000                	addi	s0,sp,32
+20010a08:	fea42623          	sw	a0,-20(s0)
+20010a0c:	feb42423          	sw	a1,-24(s0)
+20010a10:	fec42223          	sw	a2,-28(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:266
+    __METAL_ACCESS_ONCE(pllcfg) &= ~(PLL_R);
+20010a14:	fec42783          	lw	a5,-20(s0)
+20010a18:	439c                	lw	a5,0(a5)
+20010a1a:	ff87f713          	andi	a4,a5,-8
+20010a1e:	fec42783          	lw	a5,-20(s0)
+20010a22:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:267
+    __METAL_ACCESS_ONCE(pllcfg) |= PLL_R_SHIFT(config->r);
+20010a24:	fec42783          	lw	a5,-20(s0)
+20010a28:	4398                	lw	a4,0(a5)
+20010a2a:	fe442783          	lw	a5,-28(s0)
+20010a2e:	4b9c                	lw	a5,16(a5)
+20010a30:	8b9d                	andi	a5,a5,7
+20010a32:	8f5d                	or	a4,a4,a5
+20010a34:	fec42783          	lw	a5,-20(s0)
+20010a38:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:269
+
+    __METAL_ACCESS_ONCE(pllcfg) &= ~(PLL_F);
+20010a3a:	fec42783          	lw	a5,-20(s0)
+20010a3e:	439c                	lw	a5,0(a5)
+20010a40:	c0f7f713          	andi	a4,a5,-1009
+20010a44:	fec42783          	lw	a5,-20(s0)
+20010a48:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:270
+    __METAL_ACCESS_ONCE(pllcfg) |= PLL_F_SHIFT(config->f);
+20010a4a:	fec42783          	lw	a5,-20(s0)
+20010a4e:	4398                	lw	a4,0(a5)
+20010a50:	fe442783          	lw	a5,-28(s0)
+20010a54:	4bdc                	lw	a5,20(a5)
+20010a56:	0792                	slli	a5,a5,0x4
+20010a58:	3f07f793          	andi	a5,a5,1008
+20010a5c:	8f5d                	or	a4,a4,a5
+20010a5e:	fec42783          	lw	a5,-20(s0)
+20010a62:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:272
+
+    __METAL_ACCESS_ONCE(pllcfg) &= ~(PLL_Q);
+20010a64:	fec42783          	lw	a5,-20(s0)
+20010a68:	4398                	lw	a4,0(a5)
+20010a6a:	77fd                	lui	a5,0xfffff
+20010a6c:	3ff78793          	addi	a5,a5,1023 # fffff3ff <__global_pointer$+0x7fffeb47>
+20010a70:	8f7d                	and	a4,a4,a5
+20010a72:	fec42783          	lw	a5,-20(s0)
+20010a76:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:273
+    __METAL_ACCESS_ONCE(pllcfg) |= PLL_Q_SHIFT(config->q);
+20010a78:	fec42783          	lw	a5,-20(s0)
+20010a7c:	4398                	lw	a4,0(a5)
+20010a7e:	fe442783          	lw	a5,-28(s0)
+20010a82:	4f9c                	lw	a5,24(a5)
+20010a84:	00a79693          	slli	a3,a5,0xa
+20010a88:	6785                	lui	a5,0x1
+20010a8a:	c0078793          	addi	a5,a5,-1024 # c00 <__heap_size+0x400>
+20010a8e:	8ff5                	and	a5,a5,a3
+20010a90:	8f5d                	or	a4,a4,a5
+20010a92:	fec42783          	lw	a5,-20(s0)
+20010a96:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:275
+
+    if(config->d < 0)
+20010a98:	fe442783          	lw	a5,-28(s0)
+20010a9c:	4fdc                	lw	a5,28(a5)
+20010a9e:	0207db63          	bgez	a5,20010ad4 <configure_pll+0xd2>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:278
+    {
+        /* disable final divider */
+        __METAL_ACCESS_ONCE(plloutdiv) |= DIV_1;
+20010aa2:	fe842783          	lw	a5,-24(s0)
+20010aa6:	439c                	lw	a5,0(a5)
+20010aa8:	1007e713          	ori	a4,a5,256
+20010aac:	fe842783          	lw	a5,-24(s0)
+20010ab0:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:280
+
+        __METAL_ACCESS_ONCE(plloutdiv) &= ~(DIV_DIV);
+20010ab2:	fe842783          	lw	a5,-24(s0)
+20010ab6:	439c                	lw	a5,0(a5)
+20010ab8:	fc07f713          	andi	a4,a5,-64
+20010abc:	fe842783          	lw	a5,-24(s0)
+20010ac0:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:281
+        __METAL_ACCESS_ONCE(plloutdiv) |= PLL_DIV_SHIFT(1);
+20010ac2:	fe842783          	lw	a5,-24(s0)
+20010ac6:	439c                	lw	a5,0(a5)
+20010ac8:	0017e713          	ori	a4,a5,1
+20010acc:	fe842783          	lw	a5,-24(s0)
+20010ad0:	c398                	sw	a4,0(a5)
+20010ad2:	a82d                	j	20010b0c <configure_pll+0x10a>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:285
+    }
+    else
+    {
+        __METAL_ACCESS_ONCE(plloutdiv) &= ~(DIV_1);
+20010ad4:	fe842783          	lw	a5,-24(s0)
+20010ad8:	439c                	lw	a5,0(a5)
+20010ada:	eff7f713          	andi	a4,a5,-257
+20010ade:	fe842783          	lw	a5,-24(s0)
+20010ae2:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:287
+
+        __METAL_ACCESS_ONCE(plloutdiv) &= ~(DIV_DIV);
+20010ae4:	fe842783          	lw	a5,-24(s0)
+20010ae8:	439c                	lw	a5,0(a5)
+20010aea:	fc07f713          	andi	a4,a5,-64
+20010aee:	fe842783          	lw	a5,-24(s0)
+20010af2:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:288
+        __METAL_ACCESS_ONCE(plloutdiv) |= PLL_DIV_SHIFT(config->d);
+20010af4:	fe842783          	lw	a5,-24(s0)
+20010af8:	4398                	lw	a4,0(a5)
+20010afa:	fe442783          	lw	a5,-28(s0)
+20010afe:	4fdc                	lw	a5,28(a5)
+20010b00:	03f7f793          	andi	a5,a5,63
+20010b04:	8f5d                	or	a4,a4,a5
+20010b06:	fe842783          	lw	a5,-24(s0)
+20010b0a:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:291
+    }
+
+    __METAL_ACCESS_ONCE(pllcfg) &= ~(PLL_BYPASS);
+20010b0c:	fec42783          	lw	a5,-20(s0)
+20010b10:	4398                	lw	a4,0(a5)
+20010b12:	fffc07b7          	lui	a5,0xfffc0
+20010b16:	17fd                	addi	a5,a5,-1
+20010b18:	8f7d                	and	a4,a4,a5
+20010b1a:	fec42783          	lw	a5,-20(s0)
+20010b1e:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:294
+
+    /* Wait for PLL to lock */
+    while((__METAL_ACCESS_ONCE(pllcfg) & PLL_LOCK) == 0) ;
+20010b20:	0001                	nop
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:294 (discriminator 1)
+20010b22:	fec42783          	lw	a5,-20(s0)
+20010b26:	439c                	lw	a5,0(a5)
+20010b28:	fe07dde3          	bgez	a5,20010b22 <configure_pll+0x120>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:295
+}
+20010b2c:	0001                	nop
+20010b2e:	4472                	lw	s0,28(sp)
+20010b30:	6105                	addi	sp,sp,32
+20010b32:	8082                	ret
+
+20010b34 <__metal_driver_sifive_fe310_g000_pll_set_rate_hz>:
+__metal_driver_sifive_fe310_g000_pll_set_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:298
+
+long __metal_driver_sifive_fe310_g000_pll_set_rate_hz(struct metal_clock *clock, long rate)
+{
+20010b34:	715d                	addi	sp,sp,-80
+20010b36:	c686                	sw	ra,76(sp)
+20010b38:	c4a2                	sw	s0,72(sp)
+20010b3a:	0880                	addi	s0,sp,80
+20010b3c:	faa42e23          	sw	a0,-68(s0)
+20010b40:	fab42c23          	sw	a1,-72(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:299
+    struct metal_clock *pllref = __metal_driver_sifive_fe310_g000_pll_pllref(clock);
+20010b44:	fbc42503          	lw	a0,-68(s0)
+20010b48:	34dd                	jal	2001062e <__metal_driver_sifive_fe310_g000_pll_pllref>
+20010b4a:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:300
+    struct metal_clock *pllsel0 = __metal_driver_sifive_fe310_g000_pll_pllsel0(clock);
+20010b4e:	fbc42503          	lw	a0,-68(s0)
+20010b52:	34c9                	jal	20010614 <__metal_driver_sifive_fe310_g000_pll_pllsel0>
+20010b54:	fea42423          	sw	a0,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:301
+    long config_offset = __metal_driver_sifive_fe310_g000_pll_config_offset(clock);
+20010b58:	fbc42503          	lw	a0,-68(s0)
+20010b5c:	3e05                	jal	2001068c <__metal_driver_sifive_fe310_g000_pll_config_offset>
+20010b5e:	fea42223          	sw	a0,-28(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:302
+    long divider_offset = __metal_driver_sifive_fe310_g000_pll_divider_offset(clock);
+20010b62:	fbc42503          	lw	a0,-68(s0)
+20010b66:	3cf5                	jal	20010662 <__metal_driver_sifive_fe310_g000_pll_divider_offset>
+20010b68:	fea42023          	sw	a0,-32(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:303
+    long base = __metal_driver_sifive_fe310_g000_prci_base();
+20010b6c:	3699                	jal	200106b2 <__metal_driver_sifive_fe310_g000_prci_base>
+20010b6e:	fca42e23          	sw	a0,-36(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:305
+
+    __metal_io_u32 *pllcfg = (__metal_io_u32 *) (base + config_offset);
+20010b72:	fdc42703          	lw	a4,-36(s0)
+20010b76:	fe442783          	lw	a5,-28(s0)
+20010b7a:	97ba                	add	a5,a5,a4
+20010b7c:	fcf42c23          	sw	a5,-40(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:306
+    __metal_io_u32 *plloutdiv = (__metal_io_u32 *) (base + divider_offset);
+20010b80:	fdc42703          	lw	a4,-36(s0)
+20010b84:	fe042783          	lw	a5,-32(s0)
+20010b88:	97ba                	add	a5,a5,a4
+20010b8a:	fcf42a23          	sw	a5,-44(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:309
+
+    /* We can't modify the PLL if coreclk is driven by it, so switch it off */
+    if (__METAL_ACCESS_ONCE(pllcfg) & PLL_SEL)
+20010b8e:	fd842783          	lw	a5,-40(s0)
+20010b92:	4398                	lw	a4,0(a5)
+20010b94:	67c1                	lui	a5,0x10
+20010b96:	8ff9                	and	a5,a5,a4
+20010b98:	cb91                	beqz	a5,20010bac <__metal_driver_sifive_fe310_g000_pll_set_rate_hz+0x78>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:310
+        __METAL_ACCESS_ONCE(pllcfg) &= ~(PLL_SEL);
+20010b9a:	fd842783          	lw	a5,-40(s0)
+20010b9e:	4398                	lw	a4,0(a5)
+20010ba0:	77c1                	lui	a5,0xffff0
+20010ba2:	17fd                	addi	a5,a5,-1
+20010ba4:	8f7d                	and	a4,a4,a5
+20010ba6:	fd842783          	lw	a5,-40(s0)
+20010baa:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:314
+
+    /* There's a clock mux before the PLL that selects between the HFROSC and
+     * the HFXOSC as the PLL's input clock. */
+    long ref_hz = metal_clock_get_rate_hz(__METAL_ACCESS_ONCE(pllcfg) & PLL_REFSEL ? pllref : pllsel0);
+20010bac:	fd842783          	lw	a5,-40(s0)
+20010bb0:	4398                	lw	a4,0(a5)
+20010bb2:	000207b7          	lui	a5,0x20
+20010bb6:	8ff9                	and	a5,a5,a4
+20010bb8:	c781                	beqz	a5,20010bc0 <__metal_driver_sifive_fe310_g000_pll_set_rate_hz+0x8c>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:314 (discriminator 1)
+20010bba:	fec42783          	lw	a5,-20(s0)
+20010bbe:	a019                	j	20010bc4 <__metal_driver_sifive_fe310_g000_pll_set_rate_hz+0x90>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:314 (discriminator 2)
+20010bc0:	fe842783          	lw	a5,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:314 (discriminator 4)
+20010bc4:	853e                	mv	a0,a5
+20010bc6:	2245                	jal	20010d66 <metal_clock_get_rate_hz>
+20010bc8:	fca42823          	sw	a0,-48(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:317 (discriminator 4)
+
+    /* if the desired rate is within 75%-125% of the input clock, bypass the PLL */
+    if((ref_hz * 3 / 4) <= rate && (ref_hz * 5 / 4) >= rate)
+20010bcc:	fd042703          	lw	a4,-48(s0)
+20010bd0:	87ba                	mv	a5,a4
+20010bd2:	0786                	slli	a5,a5,0x1
+20010bd4:	97ba                	add	a5,a5,a4
+20010bd6:	41f7d713          	srai	a4,a5,0x1f
+20010bda:	8b0d                	andi	a4,a4,3
+20010bdc:	97ba                	add	a5,a5,a4
+20010bde:	8789                	srai	a5,a5,0x2
+20010be0:	873e                	mv	a4,a5
+20010be2:	fb842783          	lw	a5,-72(s0)
+20010be6:	02e7cb63          	blt	a5,a4,20010c1c <__metal_driver_sifive_fe310_g000_pll_set_rate_hz+0xe8>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:317 (discriminator 1)
+20010bea:	fd042703          	lw	a4,-48(s0)
+20010bee:	87ba                	mv	a5,a4
+20010bf0:	078a                	slli	a5,a5,0x2
+20010bf2:	97ba                	add	a5,a5,a4
+20010bf4:	41f7d713          	srai	a4,a5,0x1f
+20010bf8:	8b0d                	andi	a4,a4,3
+20010bfa:	97ba                	add	a5,a5,a4
+20010bfc:	8789                	srai	a5,a5,0x2
+20010bfe:	873e                	mv	a4,a5
+20010c00:	fb842783          	lw	a5,-72(s0)
+20010c04:	00f74c63          	blt	a4,a5,20010c1c <__metal_driver_sifive_fe310_g000_pll_set_rate_hz+0xe8>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:319
+    {
+        __METAL_ACCESS_ONCE(pllcfg) |= PLL_BYPASS;
+20010c08:	fd842783          	lw	a5,-40(s0)
+20010c0c:	4398                	lw	a4,0(a5)
+20010c0e:	000407b7          	lui	a5,0x40
+20010c12:	8f5d                	or	a4,a4,a5
+20010c14:	fd842783          	lw	a5,-40(s0)
+20010c18:	c398                	sw	a4,0(a5)
+20010c1a:	a0b1                	j	20010c66 <__metal_driver_sifive_fe310_g000_pll_set_rate_hz+0x132>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:323
+    }
+    else
+    {
+        int config_index = find_closest_config(ref_hz, rate);
+20010c1c:	fb842583          	lw	a1,-72(s0)
+20010c20:	fd042503          	lw	a0,-48(s0)
+20010c24:	3b15                	jal	20010958 <find_closest_config>
+20010c26:	fca42623          	sw	a0,-52(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:324
+        if(config_index != -1)
+20010c2a:	fcc42703          	lw	a4,-52(s0)
+20010c2e:	57fd                	li	a5,-1
+20010c30:	02f70263          	beq	a4,a5,20010c54 <__metal_driver_sifive_fe310_g000_pll_set_rate_hz+0x120>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:326
+        {
+            configure_pll(pllcfg, plloutdiv, &(pll_configs[config_index]));
+20010c34:	fcc42783          	lw	a5,-52(s0)
+20010c38:	00579713          	slli	a4,a5,0x5
+20010c3c:	200117b7          	lui	a5,0x20011
+20010c40:	eb878793          	addi	a5,a5,-328 # 20010eb8 <pll_configs>
+20010c44:	97ba                	add	a5,a5,a4
+20010c46:	863e                	mv	a2,a5
+20010c48:	fd442583          	lw	a1,-44(s0)
+20010c4c:	fd842503          	lw	a0,-40(s0)
+20010c50:	3b4d                	jal	20010a02 <configure_pll>
+20010c52:	a811                	j	20010c66 <__metal_driver_sifive_fe310_g000_pll_set_rate_hz+0x132>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:331
+        }
+        else
+        {
+            /* unable to find a valid configuration */
+            __METAL_ACCESS_ONCE(pllcfg) |= PLL_BYPASS;
+20010c54:	fd842783          	lw	a5,-40(s0)
+20010c58:	4398                	lw	a4,0(a5)
+20010c5a:	000407b7          	lui	a5,0x40
+20010c5e:	8f5d                	or	a4,a4,a5
+20010c60:	fd842783          	lw	a5,-40(s0)
+20010c64:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:336
+        }
+    }
+
+    /* Enable the PLL */
+    __METAL_ACCESS_ONCE(pllcfg) |= PLL_SEL;
+20010c66:	fd842783          	lw	a5,-40(s0)
+20010c6a:	4398                	lw	a4,0(a5)
+20010c6c:	67c1                	lui	a5,0x10
+20010c6e:	8f5d                	or	a4,a4,a5
+20010c70:	fd842783          	lw	a5,-40(s0)
+20010c74:	c398                	sw	a4,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:338
+
+    return __metal_driver_sifive_fe310_g000_pll_get_rate_hz(clock);
+20010c76:	fbc42503          	lw	a0,-68(s0)
+20010c7a:	3e8d                	jal	200107ec <__metal_driver_sifive_fe310_g000_pll_get_rate_hz>
+20010c7c:	87aa                	mv	a5,a0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:339
+}
+20010c7e:	853e                	mv	a0,a5
+20010c80:	40b6                	lw	ra,76(sp)
+20010c82:	4426                	lw	s0,72(sp)
+20010c84:	6161                	addi	sp,sp,80
+20010c86:	8082                	ret
+
+20010c88 <use_hfxosc>:
+use_hfxosc():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:344
+
+#ifdef __METAL_DT_SIFIVE_FE310_G000_PLL_HANDLE
+static void use_hfxosc(void) __attribute__((constructor));
+static void use_hfxosc(void)
+{
+20010c88:	1101                	addi	sp,sp,-32
+20010c8a:	ce06                	sw	ra,28(sp)
+20010c8c:	cc22                	sw	s0,24(sp)
+20010c8e:	1000                	addi	s0,sp,32
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:345
+    long init_rate = __metal_driver_sifive_fe310_g000_pll_init_rate();
+20010c90:	3431                	jal	2001069c <__metal_driver_sifive_fe310_g000_pll_init_rate>
+20010c92:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:346
+    metal_clock_set_rate_hz(
+20010c96:	fec42583          	lw	a1,-20(s0)
+20010c9a:	800007b7          	lui	a5,0x80000
+20010c9e:	0a878513          	addi	a0,a5,168 # 800000a8 <__global_pointer$+0xfffff7f0>
+20010ca2:	20ed                	jal	20010d8c <metal_clock_set_rate_hz>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_pll.c:349
+        &__METAL_DT_SIFIVE_FE310_G000_PLL_HANDLE->clock, init_rate
+    );
+}
+20010ca4:	0001                	nop
+20010ca6:	40f2                	lw	ra,28(sp)
+20010ca8:	4462                	lw	s0,24(sp)
+20010caa:	6105                	addi	sp,sp,32
+20010cac:	8082                	ret
+
+20010cae <__metal_driver_sifive_fe310_g000_prci_base>:
+__metal_driver_sifive_fe310_g000_prci_base():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1033
+{
+20010cae:	1141                	addi	sp,sp,-16
+20010cb0:	c622                	sw	s0,12(sp)
+20010cb2:	0800                	addi	s0,sp,16
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1034
+		return METAL_SIFIVE_FE310_G000_PRCI_10008000_BASE_ADDRESS;
+20010cb4:	100087b7          	lui	a5,0x10008
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:1035
+}
+20010cb8:	853e                	mv	a0,a5
+20010cba:	4432                	lw	s0,12(sp)
+20010cbc:	0141                	addi	sp,sp,16
+20010cbe:	8082                	ret
+
+20010cc0 <__metal_driver_sifive_fe310_g000_prci_get_reg>:
+__metal_driver_sifive_fe310_g000_prci_get_reg():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_prci.c:11
+#ifdef METAL_SIFIVE_FE310_G000_PRCI
+
+#include <metal/drivers/sifive_fe310-g000_prci.h>
+#include <metal/machine.h>
+
+long __metal_driver_sifive_fe310_g000_prci_get_reg(const struct __metal_driver_sifive_fe310_g000_prci *prci, long offset) {
+20010cc0:	7179                	addi	sp,sp,-48
+20010cc2:	d606                	sw	ra,44(sp)
+20010cc4:	d422                	sw	s0,40(sp)
+20010cc6:	1800                	addi	s0,sp,48
+20010cc8:	fca42e23          	sw	a0,-36(s0)
+20010ccc:	fcb42c23          	sw	a1,-40(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_prci.c:12
+    unsigned long base = __metal_driver_sifive_fe310_g000_prci_base();
+20010cd0:	3ff9                	jal	20010cae <__metal_driver_sifive_fe310_g000_prci_base>
+20010cd2:	87aa                	mv	a5,a0
+20010cd4:	fef42623          	sw	a5,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_prci.c:13
+    return __METAL_ACCESS_ONCE((__metal_io_u32 *)(base + offset));
+20010cd8:	fd842703          	lw	a4,-40(s0)
+20010cdc:	fec42783          	lw	a5,-20(s0)
+20010ce0:	97ba                	add	a5,a5,a4
+20010ce2:	439c                	lw	a5,0(a5)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_prci.c:14
+}
+20010ce4:	853e                	mv	a0,a5
+20010ce6:	50b2                	lw	ra,44(sp)
+20010ce8:	5422                	lw	s0,40(sp)
+20010cea:	6145                	addi	sp,sp,48
+20010cec:	8082                	ret
+
+20010cee <__metal_driver_sifive_fe310_g000_prci_set_reg>:
+__metal_driver_sifive_fe310_g000_prci_set_reg():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_prci.c:16
+
+long __metal_driver_sifive_fe310_g000_prci_set_reg(const struct __metal_driver_sifive_fe310_g000_prci *prci, long offset, long value) {
+20010cee:	7179                	addi	sp,sp,-48
+20010cf0:	d606                	sw	ra,44(sp)
+20010cf2:	d422                	sw	s0,40(sp)
+20010cf4:	1800                	addi	s0,sp,48
+20010cf6:	fca42e23          	sw	a0,-36(s0)
+20010cfa:	fcb42c23          	sw	a1,-40(s0)
+20010cfe:	fcc42a23          	sw	a2,-44(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_prci.c:17
+    unsigned long base = __metal_driver_sifive_fe310_g000_prci_base();
+20010d02:	3775                	jal	20010cae <__metal_driver_sifive_fe310_g000_prci_base>
+20010d04:	87aa                	mv	a5,a0
+20010d06:	fef42623          	sw	a5,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_prci.c:18
+    return __METAL_ACCESS_ONCE((__metal_io_u32 *)(base + offset)) = value;
+20010d0a:	fd842703          	lw	a4,-40(s0)
+20010d0e:	fec42783          	lw	a5,-20(s0)
+20010d12:	97ba                	add	a5,a5,a4
+20010d14:	873e                	mv	a4,a5
+20010d16:	fd442783          	lw	a5,-44(s0)
+20010d1a:	c31c                	sw	a5,0(a4)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/sifive_fe310-g000_prci.c:19
+}
+20010d1c:	853e                	mv	a0,a5
+20010d1e:	50b2                	lw	ra,44(sp)
+20010d20:	5422                	lw	s0,40(sp)
+20010d22:	6145                	addi	sp,sp,48
+20010d24:	8082                	ret
+
+20010d26 <_metal_clock_call_all_callbacks>:
+_metal_clock_call_all_callbacks():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:48
+typedef struct _metal_clock_callback_t metal_clock_callback;
+
+/*!
+ * @brief Call all callbacks in the linked list, if any are registered
+ */
+__inline__ void _metal_clock_call_all_callbacks(const metal_clock_callback *const list) {
+20010d26:	7179                	addi	sp,sp,-48
+20010d28:	d606                	sw	ra,44(sp)
+20010d2a:	d422                	sw	s0,40(sp)
+20010d2c:	1800                	addi	s0,sp,48
+20010d2e:	fca42e23          	sw	a0,-36(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:49
+    const metal_clock_callback *current = list;
+20010d32:	fdc42783          	lw	a5,-36(s0)
+20010d36:	fef42623          	sw	a5,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:50
+    while (current) {
+20010d3a:	a831                	j	20010d56 <_metal_clock_call_all_callbacks+0x30>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:51
+        current->callback(current->priv);
+20010d3c:	fec42783          	lw	a5,-20(s0)
+20010d40:	4398                	lw	a4,0(a5)
+20010d42:	fec42783          	lw	a5,-20(s0)
+20010d46:	43dc                	lw	a5,4(a5)
+20010d48:	853e                	mv	a0,a5
+20010d4a:	9702                	jalr	a4
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:52
+        current = current->_next;
+20010d4c:	fec42783          	lw	a5,-20(s0)
+20010d50:	479c                	lw	a5,8(a5)
+20010d52:	fef42623          	sw	a5,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:50
+    while (current) {
+20010d56:	fec42783          	lw	a5,-20(s0)
+20010d5a:	f3ed                	bnez	a5,20010d3c <_metal_clock_call_all_callbacks+0x16>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:54
+    }
+}
+20010d5c:	0001                	nop
+20010d5e:	50b2                	lw	ra,44(sp)
+20010d60:	5422                	lw	s0,40(sp)
+20010d62:	6145                	addi	sp,sp,48
+20010d64:	8082                	ret
+
+20010d66 <metal_clock_get_rate_hz>:
+metal_clock_get_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:105
+ * @brief Returns the current rate of the given clock
+ *
+ * @param clk The handle for the clock
+ * @return The current rate of the clock in Hz
+ */
+__inline__ long metal_clock_get_rate_hz(const struct metal_clock *clk) { return clk->vtable->get_rate_hz(clk); }
+20010d66:	1101                	addi	sp,sp,-32
+20010d68:	ce06                	sw	ra,28(sp)
+20010d6a:	cc22                	sw	s0,24(sp)
+20010d6c:	1000                	addi	s0,sp,32
+20010d6e:	fea42623          	sw	a0,-20(s0)
+20010d72:	fec42783          	lw	a5,-20(s0)
+20010d76:	439c                	lw	a5,0(a5)
+20010d78:	439c                	lw	a5,0(a5)
+20010d7a:	fec42503          	lw	a0,-20(s0)
+20010d7e:	9782                	jalr	a5
+20010d80:	87aa                	mv	a5,a0
+20010d82:	853e                	mv	a0,a5
+20010d84:	40f2                	lw	ra,28(sp)
+20010d86:	4462                	lw	s0,24(sp)
+20010d88:	6105                	addi	sp,sp,32
+20010d8a:	8082                	ret
+
+20010d8c <metal_clock_set_rate_hz>:
+metal_clock_set_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:122
+ *
+ * Prior to and after the rate change of the clock, this will call the registered
+ * pre- and post-rate change callbacks.
+ */
+__inline__ long metal_clock_set_rate_hz(struct metal_clock *clk, long hz)
+{
+20010d8c:	7179                	addi	sp,sp,-48
+20010d8e:	d606                	sw	ra,44(sp)
+20010d90:	d422                	sw	s0,40(sp)
+20010d92:	1800                	addi	s0,sp,48
+20010d94:	fca42e23          	sw	a0,-36(s0)
+20010d98:	fcb42c23          	sw	a1,-40(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:123
+    _metal_clock_call_all_callbacks(clk->_pre_rate_change_callback);
+20010d9c:	fdc42783          	lw	a5,-36(s0)
+20010da0:	43dc                	lw	a5,4(a5)
+20010da2:	853e                	mv	a0,a5
+20010da4:	3749                	jal	20010d26 <_metal_clock_call_all_callbacks>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:125
+
+    long out = clk->vtable->set_rate_hz(clk, hz);
+20010da6:	fdc42783          	lw	a5,-36(s0)
+20010daa:	439c                	lw	a5,0(a5)
+20010dac:	43dc                	lw	a5,4(a5)
+20010dae:	fd842583          	lw	a1,-40(s0)
+20010db2:	fdc42503          	lw	a0,-36(s0)
+20010db6:	9782                	jalr	a5
+20010db8:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:127
+
+    _metal_clock_call_all_callbacks(clk->_post_rate_change_callback);
+20010dbc:	fdc42783          	lw	a5,-36(s0)
+20010dc0:	479c                	lw	a5,8(a5)
+20010dc2:	853e                	mv	a0,a5
+20010dc4:	378d                	jal	20010d26 <_metal_clock_call_all_callbacks>
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:129
+
+    return out;
+20010dc6:	fec42783          	lw	a5,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:130
+}
+20010dca:	853e                	mv	a0,a5
+20010dcc:	50b2                	lw	ra,44(sp)
+20010dce:	5422                	lw	s0,40(sp)
+20010dd0:	6145                	addi	sp,sp,48
+20010dd2:	8082                	ret
+
+20010dd4 <metal_shutdown>:
+metal_shutdown():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/shutdown.c:17
+    __metal_shutdown_exit(__METAL_DT_SHUTDOWN_HANDLE, code);
+}
+#else
+#pragma message("There is no defined shutdown mechanism, metal_shutdown() will spin.")
+void metal_shutdown(int code)
+{
+20010dd4:	1101                	addi	sp,sp,-32
+20010dd6:	ce22                	sw	s0,28(sp)
+20010dd8:	1000                	addi	s0,sp,32
+20010dda:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/shutdown.c:19 (discriminator 1)
+    while (1) {
+      __asm__ volatile ("nop");
+20010dde:	0001                	nop
+20010de0:	bffd                	j	20010dde <metal_shutdown+0xa>
+
+20010de2 <__metal_driver_fixed_clock_rate>:
+__metal_driver_fixed_clock_rate():
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:178
+{
+20010de2:	1101                	addi	sp,sp,-32
+20010de4:	ce22                	sw	s0,28(sp)
+20010de6:	1000                	addi	s0,sp,32
+20010de8:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:179
+	if ((uintptr_t)clock == (uintptr_t)&__metal_dt_clock_0) {
+20010dec:	fec42703          	lw	a4,-20(s0)
+20010df0:	800007b7          	lui	a5,0x80000
+20010df4:	06078793          	addi	a5,a5,96 # 80000060 <__global_pointer$+0xfffff7a8>
+20010df8:	00f71763          	bne	a4,a5,20010e06 <__metal_driver_fixed_clock_rate+0x24>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:180
+		return METAL_FIXED_CLOCK_0_CLOCK_FREQUENCY;
+20010dfc:	00f427b7          	lui	a5,0xf42
+20010e00:	40078793          	addi	a5,a5,1024 # f42400 <__heap_size+0xf41c00>
+20010e04:	a099                	j	20010e4a <__metal_driver_fixed_clock_rate+0x68>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:182
+	else if ((uintptr_t)clock == (uintptr_t)&__metal_dt_clock_2) {
+20010e06:	fec42703          	lw	a4,-20(s0)
+20010e0a:	800007b7          	lui	a5,0x80000
+20010e0e:	06c78793          	addi	a5,a5,108 # 8000006c <__global_pointer$+0xfffff7b4>
+20010e12:	00f71763          	bne	a4,a5,20010e20 <__metal_driver_fixed_clock_rate+0x3e>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:183
+		return METAL_FIXED_CLOCK_2_CLOCK_FREQUENCY;
+20010e16:	044aa7b7          	lui	a5,0x44aa
+20010e1a:	20078793          	addi	a5,a5,512 # 44aa200 <__heap_size+0x44a9a00>
+20010e1e:	a035                	j	20010e4a <__metal_driver_fixed_clock_rate+0x68>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:185
+	else if ((uintptr_t)clock == (uintptr_t)&__metal_dt_clock_5) {
+20010e20:	fec42703          	lw	a4,-20(s0)
+20010e24:	800007b7          	lui	a5,0x80000
+20010e28:	07878793          	addi	a5,a5,120 # 80000078 <__global_pointer$+0xfffff7c0>
+20010e2c:	00f71463          	bne	a4,a5,20010e34 <__metal_driver_fixed_clock_rate+0x52>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:186
+		return METAL_FIXED_CLOCK_5_CLOCK_FREQUENCY;
+20010e30:	67a1                	lui	a5,0x8
+20010e32:	a821                	j	20010e4a <__metal_driver_fixed_clock_rate+0x68>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:188
+	else if ((uintptr_t)clock == (uintptr_t)&__metal_dt_clock_6) {
+20010e34:	fec42703          	lw	a4,-20(s0)
+20010e38:	800007b7          	lui	a5,0x80000
+20010e3c:	08478793          	addi	a5,a5,132 # 80000084 <__global_pointer$+0xfffff7cc>
+20010e40:	00f71463          	bne	a4,a5,20010e48 <__metal_driver_fixed_clock_rate+0x66>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:189
+		return METAL_FIXED_CLOCK_6_CLOCK_FREQUENCY;
+20010e44:	67a1                	lui	a5,0x8
+20010e46:	a011                	j	20010e4a <__metal_driver_fixed_clock_rate+0x68>
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:192
+		return 0;
+20010e48:	4781                	li	a5,0
+/home/yon/wsFreedomStudio/GiveMe5/bsp/build/debug/./metal/machine.h:194
+}
+20010e4a:	853e                	mv	a0,a5
+20010e4c:	4472                	lw	s0,28(sp)
+20010e4e:	6105                	addi	sp,sp,32
+20010e50:	8082                	ret
+
+20010e52 <__metal_driver_fixed_clock_get_rate_hz>:
+__metal_driver_fixed_clock_get_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/fixed-clock.c:13
+#include <metal/drivers/fixed-clock.h>
+#include <stddef.h>
+#include <metal/machine.h>
+
+long __metal_driver_fixed_clock_get_rate_hz(const struct metal_clock *gclk)
+{
+20010e52:	1101                	addi	sp,sp,-32
+20010e54:	ce06                	sw	ra,28(sp)
+20010e56:	cc22                	sw	s0,24(sp)
+20010e58:	1000                	addi	s0,sp,32
+20010e5a:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/fixed-clock.c:14
+    return __metal_driver_fixed_clock_rate(gclk);
+20010e5e:	fec42503          	lw	a0,-20(s0)
+20010e62:	3741                	jal	20010de2 <__metal_driver_fixed_clock_rate>
+20010e64:	87aa                	mv	a5,a0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/fixed-clock.c:15
+}
+20010e66:	853e                	mv	a0,a5
+20010e68:	40f2                	lw	ra,28(sp)
+20010e6a:	4462                	lw	s0,24(sp)
+20010e6c:	6105                	addi	sp,sp,32
+20010e6e:	8082                	ret
+
+20010e70 <__metal_driver_fixed_clock_set_rate_hz>:
+__metal_driver_fixed_clock_set_rate_hz():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/fixed-clock.c:18
+
+long __metal_driver_fixed_clock_set_rate_hz(struct metal_clock *gclk, long target_hz)
+{
+20010e70:	1101                	addi	sp,sp,-32
+20010e72:	ce06                	sw	ra,28(sp)
+20010e74:	cc22                	sw	s0,24(sp)
+20010e76:	1000                	addi	s0,sp,32
+20010e78:	fea42623          	sw	a0,-20(s0)
+20010e7c:	feb42423          	sw	a1,-24(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/fixed-clock.c:19
+    return __metal_driver_fixed_clock_get_rate_hz(gclk);
+20010e80:	fec42503          	lw	a0,-20(s0)
+20010e84:	37f9                	jal	20010e52 <__metal_driver_fixed_clock_get_rate_hz>
+20010e86:	87aa                	mv	a5,a0
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/drivers/fixed-clock.c:20
+}
+20010e88:	853e                	mv	a0,a5
+20010e8a:	40f2                	lw	ra,28(sp)
+20010e8c:	4462                	lw	s0,24(sp)
+20010e8e:	6105                	addi	sp,sp,32
+20010e90:	8082                	ret
+
+20010e92 <_exit>:
+_exit():
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/sys_exit.c:5
+#include <metal/shutdown.h>
+
+void
+_exit(int exit_status)
+{
+20010e92:	1101                	addi	sp,sp,-32
+20010e94:	ce06                	sw	ra,28(sp)
+20010e96:	cc22                	sw	s0,24(sp)
+20010e98:	1000                	addi	s0,sp,32
+20010e9a:	fea42623          	sw	a0,-20(s0)
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/gloss/sys_exit.c:6
+  metal_shutdown(exit_status);
+20010e9e:	fec42503          	lw	a0,-20(s0)
+20010ea2:	3f0d                	jal	20010dd4 <metal_shutdown>

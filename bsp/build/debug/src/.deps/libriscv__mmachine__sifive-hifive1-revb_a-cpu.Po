@@ -1,0 +1,115 @@
+src/libriscv__mmachine__sifive-hifive1-revb_a-cpu.o: \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/src/cpu.c \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/cpu.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/lib/gcc/riscv64-unknown-elf/8.3.0/include/stdint.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/stdint.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/machine/_default_types.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/features.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/_newlib_version.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/_intsup.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/_stdint.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/interrupt.h \
+ /home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h \
+ metal/machine.h metal/machine/platform.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/fixed-clock.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/compiler.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/memory.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/riscv_clint0.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/riscv_cpu.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/riscv_plic0.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/pmp.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_gpio0.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/gpio.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_gpio-leds.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/led.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_rtc0.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/io.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/rtc.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_spi0.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/spi.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_uart0.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/uart.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_wdog0.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/watchdog.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_hfrosc.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_prci.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_hfxosc.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_lfrosc.h \
+ /home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_pll.h
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/cpu.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/lib/gcc/riscv64-unknown-elf/8.3.0/include/stdint.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/stdint.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/machine/_default_types.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/features.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/_newlib_version.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/_intsup.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/riscv64-unknown-elf/include/sys/_stdint.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/interrupt.h:
+
+/home/yon/Downloads/FreedomStudio-2019-08-2-lin64/SiFive/riscv64-unknown-elf-gcc-8.3.0-2019.08.0/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h:
+
+metal/machine.h:
+
+metal/machine/platform.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/fixed-clock.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/compiler.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/clock.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/memory.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/riscv_clint0.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/riscv_cpu.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/riscv_plic0.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/pmp.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_gpio0.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/gpio.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_gpio-leds.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/led.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_rtc0.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/io.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/rtc.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_spi0.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/spi.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_uart0.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/uart.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_wdog0.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/watchdog.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_hfrosc.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_prci.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_hfxosc.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_lfrosc.h:
+
+/home/yon/wsFreedomStudio/GiveMe5/freedom-metal/metal/drivers/sifive_fe310-g000_pll.h:
